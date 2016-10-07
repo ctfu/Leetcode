@@ -20,6 +20,7 @@ Leetcode algorithm solutions.
 |383|[Ransom Note](https://leetcode.com/problems/ransom-note/)                                          |[Java](algorithm/ransomNote.java)                  |Easy|
 |371|[Sum of Two Integer](https://leetcode.com/problems/sum-of-two-integers/)                           |[Java](algorithm/sumOfTwoInteger.java)             |Easy|
 |349|[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)            |[Java](algorithm/intersectionOfTwoArrays.java)     |Easy|
+|100|[Same Tree](https://leetcode.com/problems/same-tree/)                                              |[Java](algorithm/sameTree.java)                    |Easy|
 
 
 
