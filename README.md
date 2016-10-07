@@ -16,6 +16,10 @@ Leetcode algorithm solutions.
 |226|[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)                            |[Java](algorithm/invertBinaryTree.java)            |Easy|
 |283|[Move Zeros](https://leetcode.com/problems/move-zeroes/)                                           |[Java](algorithm/moveZeros.java)                   |Easy|
 |404|[Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/)                            |[Java](algorithm/sumOfLeftLeaves.java)             |Easy|
+|409|[Longest Palindrom](https://leetcode.com/problems/longest-palindrome/)                             |[Java](algorithm/longestPalindrom.java)            |Easy|
+|383|[Ransom Note](https://leetcode.com/problems/ransom-note/)                                          |[Java](algorithm/ransomNote.java)                  |Easy|
+|371|[Sum of Two Integer](https://leetcode.com/problems/sum-of-two-integers/)                           |[Java](algorithm/sumOfTwoInteger.java)             |Easy|
+|349|[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)            |[Java](algorithm/intersectionOfTwoArrays.java)     |Easy|
 
 
 
