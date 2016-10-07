@@ -22,6 +22,9 @@ Leetcode algorithm solutions.
 |349|[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)            |[Java](algorithm/intersectionOfTwoArrays.java)     |Easy|
 |100|[Same Tree](https://leetcode.com/problems/same-tree/)                                              |[Java](algorithm/sameTree.java)                    |Easy|
 |171|[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/)              |[Java](algorithm/excelSheetColumnNumber.java)      |Easy|
+|242|[Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                      |[Java](algorithm/validAnagram.java)                |Easy|
+|387|[First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)|[Java](algorithm/firstUniqueCharacterInAString.java)|Easy|
+|169|[Majority Element](https://leetcode.com/problems/majority-element/)                                |[Java](algorithm/majorityElement.java)             |Easy|
 
 
 
