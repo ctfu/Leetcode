@@ -1,6 +1,6 @@
 # Leetcode
 
-Leetcode algorithm solutions. 
+Leetcode algorithm solutions. The solutions here does not necessary represent the best solutions out there. It only serves as a personal project. 
 
 |#  |Title                                                              |Solution                                         |Difficulty|
 |---|-------------------------------------------------------------------|:-----------------------------------------------:|:--------:|
@@ -29,6 +29,9 @@ Leetcode algorithm solutions.
 |217|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                            |[Java](algorithm/containsDuplicate.java)           |Easy|
 |349|[Intersection of Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)                |[Java](algorithm/intersectionOfTwoArryas.java)     |Easy|
 |350|[Intersection of Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)          |[Java](algorithm/intersectionOfTwoArryasII.java)   |Easy|
+|415|[Add Strings](https://leetcode.com/problems/add-strings/)                                          |[Java](algorithm/addStrings.java)                  |Easy|
+|13|[Roman to Integer](https://leetcode.com/problems/roman-to-integer/)                                 |[Java](algorithm/romanToInteger.java)              |Easy|
+|206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)                          |[Java](algorithm/reverseLinkedList.java)           |Easy|
 
 
 
