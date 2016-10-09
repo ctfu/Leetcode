@@ -25,6 +25,10 @@ Leetcode algorithm solutions.
 |242|[Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                      |[Java](algorithm/validAnagram.java)                |Easy|
 |387|[First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)|[Java](algorithm/firstUniqueCharacterInAString.java)|Easy|
 |169|[Majority Element](https://leetcode.com/problems/majority-element/)                                |[Java](algorithm/majorityElement.java)             |Easy|
+|401|[Binary Watch](https://leetcode.com/problems/binary-watch/)                                        |[Java](algorithm/binaryWatch.java)                 |Easy|
+|217|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                            |[Java](algorithm/containsDuplicate.java)           |Easy|
+|349|[Intersection of Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)                |[Java](algorithm/intersectionOfTwoArryas.java)     |Easy|
+|350|[Intersection of Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)          |[Java](algorithm/intersectionOfTwoArryasII.java)   |Easy|
 
 
 
