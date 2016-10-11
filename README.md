@@ -32,6 +32,9 @@ Leetcode algorithm solutions. The solutions here does not necessary represent th
 |415|[Add Strings](https://leetcode.com/problems/add-strings/)                                          |[Java](algorithm/addStrings.java)                  |Easy|
 |13|[Roman to Integer](https://leetcode.com/problems/roman-to-integer/)                                 |[Java](algorithm/romanToInteger.java)              |Easy|
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)                          |[Java](algorithm/reverseLinkedList.java)           |Easy|
+|405|[Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/)  |[Java](algorithm/convertANumberToHex.java)         |Easy|
+|231|[Power of Two](https://leetcode.com/problems/power-of-two/)                                        |[Java](algorithm/powerOfTwo.java)                  |Easy|
+|326|[Power of Three](https://leetcode.com/problems/power-of-three/)                                    |[Java](algorithm/powerOfThree.java)                |Easy|
 
 
 
