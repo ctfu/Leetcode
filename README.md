@@ -35,6 +35,9 @@ Leetcode algorithm solutions. The solutions here does not necessary represent th
 |405|[Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/)  |[Java](algorithm/convertANumberToHex.java)         |Easy|
 |231|[Power of Two](https://leetcode.com/problems/power-of-two/)                                        |[Java](algorithm/powerOfTwo.java)                  |Easy|
 |326|[Power of Three](https://leetcode.com/problems/power-of-three/)                                    |[Java](algorithm/powerOfThree.java)                |Easy|
+|202|[Happy Number](https://leetcode.com/problems/happy-number/)                                        |[Java](algorithm/happyNumber.java)                 |Easy|
+|83|[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)|[Java](algorithm/removeDuplicateFromSortedList.java)|Easy|
+|191|[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)                                |[Java](algorithm/numberOf1Bits.java)               |Easy|
 
 
 
