@@ -38,6 +38,9 @@ Leetcode algorithm solutions. The solutions here does not necessary represent th
 |202|[Happy Number](https://leetcode.com/problems/happy-number/)                                        |[Java](algorithm/happyNumber.java)                 |Easy|
 |83|[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)|[Java](algorithm/removeDuplicateFromSortedList.java)|Easy|
 |191|[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)                                |[Java](algorithm/numberOf1Bits.java)               |Easy|
+|121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)  |[Java](algorithm/bestTimeToBuyAndSellStock.java)   |Easy|
+|70|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)                                   |[Java](algorithm/climbinStairs.java)               |Easy|
+|263|[Ugly Number](https://leetcode.com/problems/ugly-number/)                                          |[Java](algorithm/uglyNumber.java)                  |Easy|
 
 
 
