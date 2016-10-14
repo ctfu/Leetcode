@@ -44,6 +44,7 @@ Leetcode algorithm solutions. The solutions here does not necessary represent th
 |263|[Ugly Number](https://leetcode.com/problems/ugly-number/)                                          |[Java](algorithm/uglyNumber.java)                  |Easy|
 |21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)                     |[Java](algorithm/mergeTwoSortedLists.java)         |Easy|
 |235|[Lowest Common Ancestor in a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)|[Java](algorithm/lowestCommonAncestorInBST.java)|Easy|
+|345|[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)            |[Java](algorithm/reverseVowelsOfAString.java)      |Easy|
 
 
 
