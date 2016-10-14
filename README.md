@@ -45,6 +45,9 @@ Leetcode algorithm solutions. The solutions here does not necessary represent th
 |21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)                     |[Java](algorithm/mergeTwoSortedLists.java)         |Easy|
 |235|[Lowest Common Ancestor in a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)|[Java](algorithm/lowestCommonAncestorInBST.java)|Easy|
 |345|[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)            |[Java](algorithm/reverseVowelsOfAString.java)      |Easy|
+|24|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)                           |[Java](algorithm/swapNodesInPairs.java)            |Easy|
+|198|[House Robber](https://leetcode.com/problems/house-robber/)                                        |[Java](algorithm/houseRobber.java)                 |Easy|
+|107|[Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)|[Java](algorithm/binaryTreeLevelOrderTraversalII.java)|Easy|
 
 
 
