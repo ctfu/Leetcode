@@ -48,6 +48,9 @@ Leetcode algorithm solutions. The solutions here does not necessary represent th
 |24|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)                           |[Java](algorithm/swapNodesInPairs.java)            |Easy|
 |198|[House Robber](https://leetcode.com/problems/house-robber/)                                        |[Java](algorithm/houseRobber.java)                 |Easy|
 |107|[Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)|[Java](algorithm/binaryTreeLevelOrderTraversalII.java)|Easy|
+|412|[Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)                                              |[Java](algorithm/fizzBuzz.java)                    |Easy|
+|141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)                              |[Java](algorithm/linkedListCycle.java)             |Easy|
+|101|[Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)                                    |[Java](algorithm/symmetricTree.java)               |Easy|
 
 
 
