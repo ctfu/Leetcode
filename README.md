@@ -38,6 +38,7 @@ Leetcode algorithm solutions. The solutions here does not necessary represent th
 |342|[Power of Four](https://leetcode.com/problems/power-of-four/)                                      |[Java](algorithm/powerOfFour.java)                 |Easy|
 |202|[Happy Number](https://leetcode.com/problems/happy-number/)                                        |[Java](algorithm/happyNumber.java)                 |Easy|
 |83|[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)|[Java](algorithm/removeDuplicateFromSortedList.java)|Easy|
+|26|[Remove Duplicates From Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)|[Java](algorithm/removeDuplicatesFromSortedArray.java)|Easy|
 |191|[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)                                |[Java](algorithm/numberOf1Bits.java)               |Easy|
 |121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)  |[Java](algorithm/bestTimeToBuyAndSellStock.java)   |Easy|
 |70|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)                                   |[Java](algorithm/climbinStairs.java)               |Easy|
@@ -54,6 +55,8 @@ Leetcode algorithm solutions. The solutions here does not necessary represent th
 |27|[Remove Element](https://leetcode.com/problems/remove-element/)                                     |[Java](algorithm/removeElement.java)               |Easy|
 |66|[Plus One](https://leetcode.com/problems/plus-one/)                                                 |[Java](algorithm/plusOne.java)                     |Easy|
 |118|[Pascal Triangle](https://leetcode.com/problems/pascals-triangle/)                                 |[Java](algorithm/pascalTriagle.java)               |Easy|
+|102|[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)|[Java](algorithm/binaryTreeLevelOrderTraversal.java)|Easy|
+|110|[Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)                        |[Java](algorithm/balancedBinaryTree.java)          |Easy|
 
 
 
