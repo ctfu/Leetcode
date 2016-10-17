@@ -51,6 +51,9 @@ Leetcode algorithm solutions. The solutions here does not necessary represent th
 |412|[Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)                                              |[Java](algorithm/fizzBuzz.java)                    |Easy|
 |141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)                              |[Java](algorithm/linkedListCycle.java)             |Easy|
 |101|[Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)                                    |[Java](algorithm/symmetricTree.java)               |Easy|
+|27|[Remove Element](https://leetcode.com/problems/remove-element/)                                     |[Java](algorithm/removeElement.java)               |Easy|
+|66|[Plus One](https://leetcode.com/problems/plus-one/)                                                 |[Java](algorithm/plusOne.java)                     |Easy|
+|118|[Pascal Triangle](https://leetcode.com/problems/pascals-triangle/)                                 |[Java](algorithm/pascalTriagle.java)               |Easy|
 
 
 
