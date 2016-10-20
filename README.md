@@ -55,8 +55,11 @@ Leetcode algorithm solutions. The solutions here does not necessary represent th
 |27|[Remove Element](https://leetcode.com/problems/remove-element/)                                     |[Java](algorithm/removeElement.java)               |Easy|
 |66|[Plus One](https://leetcode.com/problems/plus-one/)                                                 |[Java](algorithm/plusOne.java)                     |Easy|
 |118|[Pascal Triangle](https://leetcode.com/problems/pascals-triangle/)                                 |[Java](algorithm/pascalTriagle.java)               |Easy|
+|119|[Pascal Triangle II](https://leetcode.com/problems/pascals-triangle-ii/)                           |[Java](algorithm/pascalTriagleII.java)             |Easy|
 |102|[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)|[Java](algorithm/binaryTreeLevelOrderTraversal.java)|Easy|
 |110|[Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)                        |[Java](algorithm/balancedBinaryTree.java)          |Easy|
+|232|[Implement Queue Using Stack](https://leetcode.com/problems/implement-queue-using-stacks/)         |[Java](algorithm/implementQueueUsingStack.java)    |Easy|
+|172|[Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/)              |[Java](algorithm/factorialTrailingZeroes.java)     |Easy|
 
 
 
