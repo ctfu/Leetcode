@@ -60,6 +60,9 @@ Leetcode algorithm solutions. The solutions here does not necessary represent th
 |110|[Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)                        |[Java](algorithm/balancedBinaryTree.java)          |Easy|
 |232|[Implement Queue Using Stack](https://leetcode.com/problems/implement-queue-using-stacks/)         |[Java](algorithm/implementQueueUsingStack.java)    |Easy|
 |172|[Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/)              |[Java](algorithm/factorialTrailingZeroes.java)     |Easy|
+|9|[Palindrom Integer](https://leetcode.com/problems/palindrome-number/)                                |[Java](algorithm/palindromInteger.java)            |Easy|
+|257|[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)                              |[Java](algorithm/binaryTreePaths.java)             |Easy|
+|36|[Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)                                         |[Java](algorithm/validSuduku.java)                 |Easy|
 
 
 
