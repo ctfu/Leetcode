@@ -63,6 +63,9 @@ Leetcode algorithm solutions. The solutions here does not necessary represent th
 |9|[Palindrom Integer](https://leetcode.com/problems/palindrome-number/)                                |[Java](algorithm/palindromInteger.java)            |Easy|
 |257|[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)                              |[Java](algorithm/binaryTreePaths.java)             |Easy|
 |36|[Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)                                         |[Java](algorithm/validSuduku.java)                 |Easy|
+|374|[Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)        |[Java](algorithm/guessNumberHigherOrLower.java)    |Easy|
+|112|[Path Sum](https://leetcode.com/problems/path-sum/)                                                     |[Java](algorithm/pathSum.java)                     |Easy|
+|299|[Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/)                                    |[Java](algorithm/bullsAndCows.java)                |Easy|
 
 
 
