@@ -68,6 +68,9 @@ Leetcode algorithm solutions. The solutions here does not necessary represent th
 |299|[Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/)                                    |[Java](algorithm/bullsAndCows.java)                |Easy|
 |205|[Isomorphic String](https://leetcode.com/problems/isomorphic-strings/)                             |[Java](algorithm/isomorphicString.java)            |Easy|
 |38|[Count and Say](https://leetcode.com/problems/count-and-say/)                                       |[Java](algorithm/countAndSay.java)                 |Easy|
+|19|[Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) |[Java](algorithm/removeNthNodeFromEndOfList.java)  |Easy|
+|223|[Rectangle Area](https://leetcode.com/problems/rectangle-area/)                                    |[Java](algorithm/rectangleArea.java)               |Easy|
+|290|[Word Pattern](https://leetcode.com/problems/word-pattern/)                                        |[Java](algorithm/wordPattern.java)                 |Easy|
 
 
 
