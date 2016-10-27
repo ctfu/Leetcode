@@ -27,6 +27,7 @@ Leetcode algorithm solutions. The solutions here does not necessary represent th
 |169|[Majority Element](https://leetcode.com/problems/majority-element/)                                |[Java](algorithm/majorityElement.java)             |Easy|
 |401|[Binary Watch](https://leetcode.com/problems/binary-watch/)                                        |[Java](algorithm/binaryWatch.java)                 |Easy|
 |217|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                            |[Java](algorithm/containsDuplicate.java)           |Easy|
+|219|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)                      |[Java](algorithm/containsDuplicateII.java)         |Easy|
 |349|[Intersection of Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)                |[Java](algorithm/intersectionOfTwoArryas.java)     |Easy|
 |350|[Intersection of Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)          |[Java](algorithm/intersectionOfTwoArryasII.java)   |Easy|
 |415|[Add Strings](https://leetcode.com/problems/add-strings/)                                          |[Java](algorithm/addStrings.java)                  |Easy|
@@ -44,6 +45,7 @@ Leetcode algorithm solutions. The solutions here does not necessary represent th
 |70|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)                                   |[Java](algorithm/climbinStairs.java)               |Easy|
 |263|[Ugly Number](https://leetcode.com/problems/ugly-number/)                                          |[Java](algorithm/uglyNumber.java)                  |Easy|
 |21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)                     |[Java](algorithm/mergeTwoSortedLists.java)         |Easy|
+|88|[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)                             |[Java](algorithm/mergeSortedArray.java)            |Easy|
 |235|[Lowest Common Ancestor in a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)|[Java](algorithm/lowestCommonAncestorInBST.java)|Easy|
 |345|[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)            |[Java](algorithm/reverseVowelsOfAString.java)      |Easy|
 |24|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)                           |[Java](algorithm/swapNodesInPairs.java)            |Easy|
@@ -71,6 +73,7 @@ Leetcode algorithm solutions. The solutions here does not necessary represent th
 |19|[Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) |[Java](algorithm/removeNthNodeFromEndOfList.java)  |Easy|
 |223|[Rectangle Area](https://leetcode.com/problems/rectangle-area/)                                    |[Java](algorithm/rectangleArea.java)               |Easy|
 |290|[Word Pattern](https://leetcode.com/problems/word-pattern/)                                        |[Java](algorithm/wordPattern.java)                 |Easy|
+|20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)                               |[Java](algorithm/validParentheses.java)            |Easy|
 
 
 
