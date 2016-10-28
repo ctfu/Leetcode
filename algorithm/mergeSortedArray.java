@@ -24,4 +24,17 @@ public class Solution {
             nums1[index1++] = num;
         }
     }
-} 
+}
+
+//second Solution
+public class Solution {
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+        int i = m-1, j = n-1, temp = m + n- 1;
+        while(i > -1 && j > -1){
+            nums1[temp--] = nums1[i] > nums2[j] ? nums1[i--] : nums2[j--];
+        }
+        while(j > -1){
+            nums1[temp--] = nums2[j--];
+        }
+    }
+}

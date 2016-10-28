@@ -74,6 +74,9 @@ Leetcode algorithm solutions. The solutions here does not necessary represent th
 |223|[Rectangle Area](https://leetcode.com/problems/rectangle-area/)                                    |[Java](algorithm/rectangleArea.java)               |Easy|
 |290|[Word Pattern](https://leetcode.com/problems/word-pattern/)                                        |[Java](algorithm/wordPattern.java)                 |Easy|
 |20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)                               |[Java](algorithm/validParentheses.java)            |Easy|
+|225|[Implement Stack Using Queue](https://leetcode.com/problems/implement-stack-using-queues/)         |[Java](algorithm/implementStackUsingQueue.java)    |Easy|
+|234|[Palindrom Linked List](https://leetcode.com/problems/palindrome-linked-list/)                     |[Java](algorithm/palindromLinkedList.java)         |Easy|
+|58|[Length of Last word](https://leetcode.com/problems/length-of-last-word/)                           |[Java](algorithm/lengthOfLastWord.java)            |Easy|
 
 
 
