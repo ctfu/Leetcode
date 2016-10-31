@@ -77,6 +77,9 @@ Leetcode algorithm solutions. The solutions here does not necessary represent th
 |225|[Implement Stack Using Queue](https://leetcode.com/problems/implement-stack-using-queues/)         |[Java](algorithm/implementStackUsingQueue.java)    |Easy|
 |234|[Palindrom Linked List](https://leetcode.com/problems/palindrome-linked-list/)                     |[Java](algorithm/palindromLinkedList.java)         |Easy|
 |58|[Length of Last word](https://leetcode.com/problems/length-of-last-word/)                           |[Java](algorithm/lengthOfLastWord.java)            |Easy|
+|203|[Remove Linked List Element](https://leetcode.com/problems/remove-linked-list-elements/)           |[Java](algorithm/removeLinkedListElements.java)    |Easy|
+|400|[Nth Digit](https://leetcode.com/problems/nth-digit/)                                              |[Java](algorithm/nthDigit.java)                    |Easy|
+|14|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)                       |[Java](algorithm/longestCommonPrefix.java)         |Easy|
 
 
 

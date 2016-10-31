@@ -23,10 +23,10 @@ public class Solution {
         ListNode a = headA;
         ListNode b = headB;
         while(a != b){
+            //if(a != null || b != null) add this condition to prevent there is no intersection with some or differnet length
             a = a == null?headB:a.next;
             b = b == null?headA:b.next;
         }
         return a;   /* if no intersection, a and b will simply be null */
     }
 }
-
