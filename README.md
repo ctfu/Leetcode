@@ -80,6 +80,9 @@ Leetcode algorithm solutions. The solutions here does not necessary represent th
 |203|[Remove Linked List Element](https://leetcode.com/problems/remove-linked-list-elements/)           |[Java](algorithm/removeLinkedListElements.java)    |Easy|
 |400|[Nth Digit](https://leetcode.com/problems/nth-digit/)                                              |[Java](algorithm/nthDigit.java)                    |Easy|
 |14|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)                       |[Java](algorithm/longestCommonPrefix.java)         |Easy|
+|67|[Add Binary](https://leetcode.com/problems/add-binary/)                                             |[Java](algorithm/addBinary.java)                   |Easy|
+|438|[Find All Anagrams in A String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)      |[Java](algorithm/findAllAnagramsInString.java)     |Easy|
+|190|[Reverse Bits](https://leetcode.com/problems/reverse-bits/)                                        |[Java](algorithm/reverseBits.java)                 |Easy|
 
 
 
