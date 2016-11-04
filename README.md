@@ -86,6 +86,9 @@ Leetcode algorithm solutions. The solutions here does not necessary represent th
 |396|[Rotate Function](https://leetcode.com/problems/rotate-function/)                                  |[Java](algorithm/rotateFunction.java)              |Easy|
 |1|[Two Sum](https://leetcode.com/problems/two-sum/)                                                    |[Java](algorithm/twoSum.java)                      |Easy|
 |28|[Implement strStr()](https://leetcode.com/problems/implement-strstr/)                               |[Java](algorithm/implementstrStr.java)             |Easy|
+|414|[Third Maximum Number](https://leetcode.com/problems/third-maximum-number/)                        |[Java](algorithm/thirdMaximumNumber.java)          |Easy|
+|303|[Range Sum Query](https://leetcode.com/problems/range-sum-query-immutable/)                        |[Java](algorithm/rangeSumQuery.java)               |Easy|
+|204|[Count Primes](https://leetcode.com/problems/count-primes/)                                        |[Java](algorithm/countPrimes.java)                 |Easy|
 
 
 
