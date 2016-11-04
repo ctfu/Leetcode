@@ -83,6 +83,9 @@ Leetcode algorithm solutions. The solutions here does not necessary represent th
 |67|[Add Binary](https://leetcode.com/problems/add-binary/)                                             |[Java](algorithm/addBinary.java)                   |Easy|
 |438|[Find All Anagrams in A String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)      |[Java](algorithm/findAllAnagramsInString.java)     |Easy|
 |190|[Reverse Bits](https://leetcode.com/problems/reverse-bits/)                                        |[Java](algorithm/reverseBits.java)                 |Easy|
+|396|[Rotate Function](https://leetcode.com/problems/rotate-function/)                                  |[Java](algorithm/rotateFunction.java)              |Easy|
+|1|[Two Sum](https://leetcode.com/problems/two-sum/)                                                    |[Java](algorithm/twoSum.java)                      |Easy|
+|28|[Implement strStr()](https://leetcode.com/problems/implement-strstr/)                               |[Java](algorithm/implementstrStr.java)             |Easy|
 
 
 
