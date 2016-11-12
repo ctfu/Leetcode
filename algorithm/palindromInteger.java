@@ -8,7 +8,7 @@ public class Solution {
             q += p % 10;
             p /= 10;
         }
-        //the format will be example 12321: 123 == 12321 / 10 && 1 == 12321 % 10
+        //the format will be example 12321: 1232 == 12321 / 10 && 1 == 12321 % 10
         return q == x /10 && p == x % 10; //can just get rid of p == x % 10.
     }
 }

@@ -89,6 +89,9 @@ Leetcode algorithm solutions. The solutions here does not necessary represent th
 |414|[Third Maximum Number](https://leetcode.com/problems/third-maximum-number/)                        |[Java](algorithm/thirdMaximumNumber.java)          |Easy|
 |303|[Range Sum Query](https://leetcode.com/problems/range-sum-query-immutable/)                        |[Java](algorithm/rangeSumQuery.java)               |Easy|
 |204|[Count Primes](https://leetcode.com/problems/count-primes/)                                        |[Java](algorithm/countPrimes.java)                 |Easy|
+|6|[Zig Zag Conversion](https://leetcode.com/problems/zigzag-conversion/)                               |[Java](algorithm/zigZagConversion.java)            |Easy|
+|155|[Min Stack](https://leetcode.com/problems/min-stack/)                                              |[Java](algorithm/minStack.java)                    |Easy|
+|125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)                                |[Java](algorithm/validPalindrome.java)             |Easy|
 
 
 
