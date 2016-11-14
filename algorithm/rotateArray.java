@@ -47,7 +47,7 @@ public class Solution {
 /* a nicer in-place solution based on above logic*/
 public class Solution {
     public void rotate(int[] nums, int k) {
-        k = k % nums.length; /* this one importatn*/
+        k = k % nums.length; /* this one importatn because k could be greater than nums.length*/
         reverse(nums, 0, nums.length -1);
         reverse(nums, 0, k -1);
         reverse(nums, k, nums.length -1);
