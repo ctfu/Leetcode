@@ -95,6 +95,9 @@ Leetcode algorithm solutions. The solutions here does not necessary represent th
 |125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)                                |[Java](algorithm/validPalindrome.java)             |Easy|
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version/)                              |[Java](algorithm/firstBadVersion.java)             |Easy|
 |7|[Reverse Integer](https://leetcode.com/problems/reverse-integer/)                                    |[Java](algorithm/reverseInteger.java)              |Easy|
+|189|[Rotate Arrat](https://leetcode.com/problems/rotate-array/)                                        |[Java](algorithm/rotateArrat.java)                 |Easy|
+|165|[Compare Version Number](https://leetcode.com/problems/compare-version-numbers/)                   |[Java](algorithm/compareVersionNumber.java)        |Easy|
+|8|[String to Integer(atoi)](https://leetcode.com/problems/string-to-integer-atoi/)                     |[Java](algorithm/stringToInteger.java)             |Easy|
 
 
 
