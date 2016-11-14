@@ -22,6 +22,7 @@ Leetcode algorithm solutions. The solutions here does not necessary represent th
 |349|[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)            |[Java](algorithm/intersectionOfTwoArrays.java)     |Easy|
 |100|[Same Tree](https://leetcode.com/problems/same-tree/)                                              |[Java](algorithm/sameTree.java)                    |Easy|
 |171|[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/)              |[Java](algorithm/excelSheetColumnNumber.java)      |Easy|
+|168|[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/)                |[Java](algorithm/excelSheetColumnTitle.java)       |Easy|
 |242|[Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                      |[Java](algorithm/validAnagram.java)                |Easy|
 |387|[First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)|[Java](algorithm/firstUniqueCharacterInAString.java)|Easy|
 |169|[Majority Element](https://leetcode.com/problems/majority-element/)                                |[Java](algorithm/majorityElement.java)             |Easy|
@@ -92,6 +93,8 @@ Leetcode algorithm solutions. The solutions here does not necessary represent th
 |6|[Zig Zag Conversion](https://leetcode.com/problems/zigzag-conversion/)                               |[Java](algorithm/zigZagConversion.java)            |Easy|
 |155|[Min Stack](https://leetcode.com/problems/min-stack/)                                              |[Java](algorithm/minStack.java)                    |Easy|
 |125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)                                |[Java](algorithm/validPalindrome.java)             |Easy|
+|278|[First Bad Version](https://leetcode.com/problems/first-bad-version/)                              |[Java](algorithm/firstBadVersion.java)             |Easy|
+|7|[Reverse Integer](https://leetcode.com/problems/reverse-integer/)                                    |[Java](algorithm/reverseInteger.java)              |Easy|
 
 
 
