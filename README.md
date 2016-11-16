@@ -98,6 +98,8 @@ Leetcode algorithm solutions. The solutions here does not necessary represent th
 |189|[Rotate Arrat](https://leetcode.com/problems/rotate-array/)                                        |[Java](algorithm/rotateArrat.java)                 |Easy|
 |165|[Compare Version Number](https://leetcode.com/problems/compare-version-numbers/)                   |[Java](algorithm/compareVersionNumber.java)        |Easy|
 |8|[String to Integer(atoi)](https://leetcode.com/problems/string-to-integer-atoi/)                     |[Java](algorithm/stringToInteger.java)             |Easy|
+|419|[Battleship in a Board](https://leetcode.com/problems/battleships-in-a-board/)                     |[Java](algorithm/battleshipInABoard.java)          |Easy|
+|338|[Counting Bits](https://leetcode.com/problems/counting-bits/)                                      |[Java](algorithm/countingBits.java)                |Easy|
 
 
 
