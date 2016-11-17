@@ -100,6 +100,8 @@ Leetcode algorithm solutions. The solutions here does not necessary represent th
 |8|[String to Integer(atoi)](https://leetcode.com/problems/string-to-integer-atoi/)                     |[Java](algorithm/stringToInteger.java)             |Easy|
 |419|[Battleship in a Board](https://leetcode.com/problems/battleships-in-a-board/)                     |[Java](algorithm/battleshipInABoard.java)          |Easy|
 |338|[Counting Bits](https://leetcode.com/problems/counting-bits/)                                      |[Java](algorithm/countingBits.java)                |Easy|
+|413|[Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices/)                              |[Java](algorithm/arithmeticSlices.java)            |Easy|
+|406|[Queue Construction By Height](https://leetcode.com/problems/queue-reconstruction-by-height/)      |[Java](algorithm/queueConstructionByHeight.java)   |Easy|
 
 
 
