@@ -1,6 +1,6 @@
 # Leetcode
 
-Leetcode algorithm solutions. The solutions here does not necessary represent the best solutions out there. It only serves as a personal project. 
+Leetcode algorithm solutions. The solutions here does not necessarily represent the best solutions out there. It only serves as a personal project. 
 
 |#  |Title                                                              |Solution                                         |Difficulty|
 |---|-------------------------------------------------------------------|:-----------------------------------------------:|:--------:|
