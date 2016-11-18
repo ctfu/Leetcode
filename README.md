@@ -42,7 +42,8 @@ Leetcode algorithm solutions. The solutions here does not necessary represent th
 |83|[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)|[Java](algorithm/removeDuplicateFromSortedList.java)|Easy|
 |26|[Remove Duplicates From Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)|[Java](algorithm/removeDuplicatesFromSortedArray.java)|Easy|
 |191|[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)                                |[Java](algorithm/numberOf1Bits.java)               |Easy|
-|121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)  |[Java](algorithm/bestTimeToBuyAndSellStock.java)   |Easy|
+|121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)  |[Java](algorithm/bestTimeToBuyAndSell.java)        |Easy|
+|122|[Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)|[Java](algorithm/bestTimeToBuyAndSellII.java)  |Easy|
 |70|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)                                   |[Java](algorithm/climbinStairs.java)               |Easy|
 |263|[Ugly Number](https://leetcode.com/problems/ugly-number/)                                          |[Java](algorithm/uglyNumber.java)                  |Easy|
 |21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)                     |[Java](algorithm/mergeTwoSortedLists.java)         |Easy|
@@ -106,6 +107,7 @@ Leetcode algorithm solutions. The solutions here does not necessary represent th
 |167|[Two Sum II (Input Array is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|[Java](algorithm/twoSumII.java)                   |Easy|
 |238|[Product of Array Except Itself](https://leetcode.com/problems/product-of-array-except-self/)      |[Java](algorithm/productOfArratExceptItself.java)  |Easy|
 |382|[Linked list Random Node](https://leetcode.com/problems/linked-list-random-node/)                  |[Java](algorithm/productOfArratExceptItself.java)  |Easy|
+|347|[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)                  |[Java](algorithm/topKFrequentElements.java)        |Easy|
 
 
 
