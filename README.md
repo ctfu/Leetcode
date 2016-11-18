@@ -104,6 +104,8 @@ Leetcode algorithm solutions. The solutions here does not necessary represent th
 |406|[Queue Construction By Height](https://leetcode.com/problems/queue-reconstruction-by-height/)      |[Java](algorithm/queueConstructionByHeight.java)   |Easy|
 |260|[Single Number III](https://leetcode.com/problems/single-number-iii/)                              |[Java](algorithm/singleNumberIII.java)             |Easy|
 |167|[Two Sum II (Input Array is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|[Java](algorithm/twoSumII.java)                   |Easy|
+|238|[Product of Array Except Itself](https://leetcode.com/problems/product-of-array-except-self/)      |[Java](algorithm/productOfArratExceptItself.java)  |Easy|
+|382|[Linked list Random Node](https://leetcode.com/problems/linked-list-random-node/)                  |[Java](algorithm/productOfArratExceptItself.java)  |Easy|
 
 
 
