@@ -108,6 +108,8 @@ Leetcode algorithm solutions. The solutions here does not necessarily represent 
 |238|[Product of Array Except Itself](https://leetcode.com/problems/product-of-array-except-self/)      |[Java](algorithm/productOfArratExceptItself.java)  |Easy|
 |382|[Linked list Random Node](https://leetcode.com/problems/linked-list-random-node/)                  |[Java](algorithm/productOfArratExceptItself.java)  |Easy|
 |347|[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)                  |[Java](algorithm/topKFrequentElements.java)        |Easy|
+|357|[Count Numbers with Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/)|[Java](algorithm/countNumberWithUniqueDigits.java) |Easy|
+|384|[Shuttle an Array](https://leetcode.com/problems/shuffle-an-array/)                                |[Java](algorithm/shuffleAnArray.java)              |Easy|
 
 
 
