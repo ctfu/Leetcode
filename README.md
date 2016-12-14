@@ -99,9 +99,9 @@ Leetcode algorithm solutions. The solutions here does not necessarily represent 
 |189|[Rotate Arrat](https://leetcode.com/problems/rotate-array/)                                        |[Java](algorithm/rotateArrat.java)                 |Easy|
 |165|[Compare Version Number](https://leetcode.com/problems/compare-version-numbers/)                   |[Java](algorithm/compareVersionNumber.java)        |Easy|
 |8|[String to Integer(atoi)](https://leetcode.com/problems/string-to-integer-atoi/)                     |[Java](algorithm/stringToInteger.java)             |Easy|
-|419|[Battleship in a Board](https://leetcode.com/problems/battleships-in-a-board/)                     |[Java](algorithm/battleshipInABoard.java)          |Easy|
-|338|[Counting Bits](https://leetcode.com/problems/counting-bits/)                                      |[Java](algorithm/countingBits.java)                |Easy|
-|413|[Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices/)                              |[Java](algorithm/arithmeticSlices.java)            |Easy|
+|419|[Battleship in a Board](https://leetcode.com/problems/battleships-in-a-board/)                     |[Java](algorithm/battleshipInABoard.java)          |Medium|
+|338|[Counting Bits](https://leetcode.com/problems/counting-bits/)                                      |[Java](algorithm/countingBits.java)                |Medium|
+|413|[Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices/)                              |[Java](algorithm/arithmeticSlices.java)            |Medium|
 |406|[Queue Construction By Height](https://leetcode.com/problems/queue-reconstruction-by-height/)      |[Java](algorithm/queueConstructionByHeight.java)   |Medium|
 |260|[Single Number III](https://leetcode.com/problems/single-number-iii/)                              |[Java](algorithm/singleNumberIII.java)             |Medium|
 |167|[Two Sum II (Input Array is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|[Java](algorithm/twoSumII.java)                   |Medium|
