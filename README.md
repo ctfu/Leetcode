@@ -102,14 +102,16 @@ Leetcode algorithm solutions. The solutions here does not necessarily represent 
 |419|[Battleship in a Board](https://leetcode.com/problems/battleships-in-a-board/)                     |[Java](algorithm/battleshipInABoard.java)          |Easy|
 |338|[Counting Bits](https://leetcode.com/problems/counting-bits/)                                      |[Java](algorithm/countingBits.java)                |Easy|
 |413|[Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices/)                              |[Java](algorithm/arithmeticSlices.java)            |Easy|
-|406|[Queue Construction By Height](https://leetcode.com/problems/queue-reconstruction-by-height/)      |[Java](algorithm/queueConstructionByHeight.java)   |Easy|
-|260|[Single Number III](https://leetcode.com/problems/single-number-iii/)                              |[Java](algorithm/singleNumberIII.java)             |Easy|
-|167|[Two Sum II (Input Array is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|[Java](algorithm/twoSumII.java)                   |Easy|
-|238|[Product of Array Except Itself](https://leetcode.com/problems/product-of-array-except-self/)      |[Java](algorithm/productOfArratExceptItself.java)  |Easy|
-|382|[Linked list Random Node](https://leetcode.com/problems/linked-list-random-node/)                  |[Java](algorithm/productOfArratExceptItself.java)  |Easy|
-|347|[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)                  |[Java](algorithm/topKFrequentElements.java)        |Easy|
-|357|[Count Numbers with Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/)|[Java](algorithm/countNumberWithUniqueDigits.java) |Easy|
-|384|[Shuttle an Array](https://leetcode.com/problems/shuffle-an-array/)                                |[Java](algorithm/shuffleAnArray.java)              |Easy|
+|406|[Queue Construction By Height](https://leetcode.com/problems/queue-reconstruction-by-height/)      |[Java](algorithm/queueConstructionByHeight.java)   |Medium|
+|260|[Single Number III](https://leetcode.com/problems/single-number-iii/)                              |[Java](algorithm/singleNumberIII.java)             |Medium|
+|167|[Two Sum II (Input Array is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|[Java](algorithm/twoSumII.java)                   |Medium|
+|238|[Product of Array Except Itself](https://leetcode.com/problems/product-of-array-except-self/)      |[Java](algorithm/productOfArratExceptItself.java)  |Medium|
+|382|[Linked list Random Node](https://leetcode.com/problems/linked-list-random-node/)                  |[Java](algorithm/productOfArratExceptItself.java)  |Medium|
+|347|[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)                  |[Java](algorithm/topKFrequentElements.java)        |Medium|
+|357|[Count Numbers with Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/)|[Java](algorithm/countNumberWithUniqueDigits.java) |Medium|
+|384|[Shuttle an Array](https://leetcode.com/problems/shuffle-an-array/)                                |[Java](algorithm/shuffleAnArray.java)              |Medium|
+|268|[ Missing Number](https://leetcode.com/problems/missing-number/)                                   |[Java](algorithm/missingNumber.java)               |Medium|
+|54|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)                                       |[Java](algorithm/spiralMatrix.java)                |Medium|
 
 
 
