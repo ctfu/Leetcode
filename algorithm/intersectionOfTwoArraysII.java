@@ -1,3 +1,4 @@
+/* sort the two array and use two pointers */
 public class Solution {
     public int[] intersect(int[] nums1, int[] nums2) {
         List<Integer> list = new ArrayList<>();

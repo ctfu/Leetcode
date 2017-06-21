@@ -32,7 +32,7 @@ public class MinStack {
     }
 }
 
-//second solution to construct a Node
+/*second solution to construct a Node, a variation of LinkedList */
 class MinStack {
     private Node head;
 

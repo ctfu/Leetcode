@@ -4,7 +4,6 @@ public class Solution {
         for(int i = 0; i < s.length(); i++){
             result.append(s.charAt(s.length() - 1 - i));
         }
-
         return result.toString();
     }
 }

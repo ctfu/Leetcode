@@ -4,8 +4,9 @@
 2. For 2nd tallest group (and the rest), insert each one of them into (S) by k value. So on and so forth.
 */
 public class Solution {
+    /* two diamention array is consider as a list of list */
     public int[][] reconstructQueue(int[][] people) {
-      //lambda expression of the comparator, with h descedning, k ascending
+      /* if same h, sort it asending order with k, if diffrent h, sort in desending order with h */
         Arrays.sort(people, (a, b) -> a[0] == b[0] ? a[1]-b[1] : b[0]-a[0]);
         List<int[]> res = new LinkedList<>();
         for(int[] p : people){
@@ -21,13 +22,13 @@ public class Solution {
         Arrays.sort(people, new Comparator<int[]>(){
             @Override
             public int compare(int[] a, int[] b){
-                return a[0] == b[0] ? a[1] - b[1] : b[0] - a[0];
+                return a[0] == b[0] ? a[1] - b[1] : b[0] - a[0]; /* important step */
             }
         });
         List<int[]> res = new LinkedList<>();
         for(int[] p : people){
             res.add(p[1], p);
         }
-        return res.toArray(new int[people.length][]);
+        return res.toArray(new int[people.length][]); /* important step */
     }
 }

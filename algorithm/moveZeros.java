@@ -7,7 +7,7 @@ public class Solution {
               nums[index++] = nums[i];
           }
       }
-      while(index < nums.length){
+      while(index < nums.length){ /* the amount of zero to be appended */
           nums[index++] = 0;
       }
     }

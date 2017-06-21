@@ -6,22 +6,27 @@
  *     ListNode(int x) { val = x; }
  * }
  */
+ /* the approah is similar to reorder list */
 public class Solution {
     public boolean isPalindrome(ListNode head) {
-        ListNode slow = head, fast = head;
-        while(fast != null && fast.next != null){
+        if(head == null) return true;
+        ListNode fast = head, slow = head;
+        while(fast.next != null && fast.next.next != null){
             fast = fast.next.next;
             slow = slow.next;
         }
-        if(fast != null) slow = slow.next; //odd elements
-        slow = reverseList(slow);
-        while(slow != null && head.val == slow.val){
+        ListNode newHead = slow.next;
+        newHead = reverse(newHead);
+        while(newHead != null){ /* test new list length is enough to deal with odd,even list */
+            if(newHead.val != head.val){
+                return false;
+            }
+            newHead = newHead.next;
             head = head.next;
-            slow = slow.next;
         }
-        return slow == null;
+        return true;
     }
-    public ListNode reverseList(ListNode head){
+    public ListNode reverse(ListNode head){
         ListNode newHead = null;
         while(head != null){
             ListNode next = head.next;

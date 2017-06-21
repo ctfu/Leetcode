@@ -1,3 +1,4 @@
+/* Method 1: The typical loop solution */
 public class Solution {
     public boolean isPowerOfFour(int num) {
         if(num == 0) return false;
@@ -9,7 +10,7 @@ public class Solution {
     }
 }
 
-//without loop, using regular expression
+/* Method 2: without loop, using regular expression */
 public class Solution {
     public boolean isPowerOfFour(int num) {
         return Integer.toBinaryString(num).matches("1(00)*");

@@ -1,3 +1,4 @@
+/* Find the exact one difference in two string */
 public class Solution {
     public char findTheDifference(String s, String t) {
         char result = t.charAt(t.length() - 1);

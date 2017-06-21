@@ -21,7 +21,7 @@ If the input is [Integer.MIN_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE - 1], i
 when overflow, the return value is -1
 Correction: */
 
-if((long)(A[i]-A[i-1]) == (long)(A[i-1]-A[i-2])){
+if((long)A[i]-A[i-1] == (long)A[i-1]-A[i-2]){
     cur++;
     slices += cur;
 }else{

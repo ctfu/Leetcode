@@ -3,7 +3,7 @@ class MyStack {
     Queue<Integer> queue = new LinkedList<>();
     public void push(int x) {
         queue.add(x);
-        //start from size 1
+        /* keep the very last element, and re-offer rest to the quue */
         for(int i = 1; i < queue.size(); i++){
             queue.add(queue.poll());
         }

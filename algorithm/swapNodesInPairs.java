@@ -20,17 +20,20 @@ public class Solution {
     }
 }
 //without recursive, use dummy head node
-public ListNode swapPairs(ListNode head) {
-    ListNode dummy = new ListNode();
-    dummy.next = head;
-    ListNode current = dummy;
-    while (current.next != null && current.next.next != null) {
-        ListNode first = current.next;
-        ListNode second = current.next.next;
-        first.next = second.next;
-        current.next = second;
-        current.next.next = first;
-        current = current.next.next;
+public class Solution {
+    public ListNode swapPairs(ListNode head) {
+        if(head == null) return null;
+        ListNode dummy = new ListNode(-1);
+        dummy.next = head;
+        ListNode pre = dummy;
+        while(pre.next != null && pre.next.next != null){
+            ListNode first = pre.next;
+            ListNode second = pre.next.next;
+            first.next = second.next;
+            second.next = pre.next;
+            pre.next = second;
+            pre = first;
+        }
+        return dummy.next;
     }
-    return dummy.next;
 }

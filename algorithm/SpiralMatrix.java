@@ -1,3 +1,4 @@
+/* It is like squizing matrix borders into center in clockwise */
 public class Solution {
     public List<Integer> spiralOrder(int[][] matrix) {
         List<Integer> res = new ArrayList<>();

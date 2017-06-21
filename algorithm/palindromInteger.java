@@ -1,7 +1,7 @@
 public class Solution {
     //the key idea is to reverse the interger
     public boolean isPalindrome(int x) {
-        if(x < 0) return false;
+        if(x < 0) return false; /* negative number is not palindrom */
         int p = x, q = 0;
         while(p >= 10){
             q *= 10;

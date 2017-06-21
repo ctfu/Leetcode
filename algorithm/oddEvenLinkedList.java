@@ -10,22 +10,22 @@
  * }
  */
 
-public class Solution {
-    public ListNode oddEvenList(ListNode head) {
-        if(head == null || head.next == null){
-            return head;
-        }
-        /* separate the list into odd and even list by chaning the pointers */
-        ListNode odd = head;
-        ListNode even = head.next;
-        ListNode evenHead = head.next;       /* maintain the head of the even list for last connectivity */
-        while(even != null && even.next != null){
-            odd.next = even.next;
-            even.next = odd.next.next;  /* even can be null because of this */
-            odd = odd.next;
-            even = even.next;
-        }
-        odd.next = evenHead;
-        return head;
-    }
-}
+ public class Solution {
+     public ListNode oddEvenList(ListNode head) {
+         if (head == null) {
+             return null;
+         }
+         /* don't need dummy node here because head is odd, which will be kept */
+         ListNode prev = head;
+         ListNode first = prev.next;
+         while (first != null && first.next != null) {
+             ListNode second = first.next;
+             first.next = second.next;
+             second.next = prev.next;
+             prev.next = second;
+             first = first.next;
+             prev = prev.next;
+         }
+         return head;
+     }
+ }

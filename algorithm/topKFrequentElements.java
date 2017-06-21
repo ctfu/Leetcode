@@ -1,63 +1,58 @@
-/* using comparotro instead of lambda expression is a lot faster */
+/* Method 1: HashMap + maxHeap (priorityQueue) o(nlogk)*/
 public class Solution {
     public List<Integer> topKFrequent(int[] nums, int k) {
-        ArrayList<Node> list = new ArrayList<>();
         List<Integer> res = new ArrayList<>();
+        if(nums == null || nums.length == 0) return res;
 
-        Arrays.sort(nums);
-        int count = 1;
-        for(int i = 0; i < nums.length-1; i++){
-            if(nums[i] == nums[i+1]){
-                count++;
-            }else{
-                list.add(new Node(nums[i], count));
-                count = 1;
-            }
-        }
-
-        list.add(new Node(nums[nums.length -1], count));
-        /*Collections.sort(list, (a, b) -> b.frequency - a.frequency); */
-        Collections.sort(list, new Comparator<Node>(){  /* using comparator */
+        Map<Integer, Integer> hm = new HashMap<>();
+        /* a priorityQueue to store each entry for the map */
+       /*PriorityQueue<Map.Entry<Integer, Integer>> maxHeap = new PriorityQueue(k, (a, b) -> b.getValue()-a.getValue());*/
+        PriorityQueue<Map.Entry<Integer, Integer>> maxHeap = new PriorityQueue(k,
+                        new Comparator<Map.Entry<Integer, Integer>>(){
             @Override
-            public int compare(Node a, Node b){
-                return b.frequency - a.frequency;
+            public int compare(Map.Entry<Integer, Integer> entry1, Map.Entry<Integer, Integer> entry2){
+                return entry2.getValue() - entry1.getValue();
             }
         });
-        int index = 0;
-        while(k > 0){
-           res.add(list.get(index++).element);
-           k--;
+        /* hm count the frequency */
+        for(int num : nums){
+            hm.put(num, hm.getOrDefault(num, 0)+1);
+        }
+        /* put entry to the heap */
+        for(Map.Entry<Integer, Integer> entry : hm.entrySet()){
+            maxHeap.offer(entry);
+        }
+        /* extract k size from the heap */
+        while(res.size() < k){
+            res.add(maxHeap.poll().getKey());
         }
         return res;
     }
-    private class Node{
-        int element;
-        int frequency;
-        public Node(int element, int frequency){
-            this.element = element;
-            this.frequency = frequency;
-        }
-    }
 }
 
-/* second solution is to use bucket sort */
+/* Method 2: HashMap + buckets (List of ArrayList) o(n)*/
 public class Solution {
     public List<Integer> topKFrequent(int[] nums, int k) {
-        List<Integer>[] buckets = new List[nums.length + 1]; /* an List<Integer> array for buckets */
-        Map<Integer, Integer> map = new HashMap<>();
         List<Integer> res = new ArrayList<>();
+        if(nums == null || nums.length == 0) return res;
+
+        Map<Integer, Integer> hm = new HashMap<>();
+        List<Integer>[] buckets = new List[nums.length + 1]; /* initialize an array of List */
         for(int num : nums){
-            map.put(num, map.getOrDefault(num, 0) + 1); /* this map collectes the element and its frequency */
+            hm.put(num, hm.getOrDefault(num, 0) + 1);
         }
-        for(int key : map.keySet()){
-            int freq = map.get(key);
-            if(buckets[freq] == null){
-               buckets[freq] = new ArrayList<>();
+        /* frequency as the bucket index */
+        for(int key : hm.keySet()){
+            int frequency = hm.get(key);
+            if(buckets[frequency] == null){
+                buckets[frequency] = new ArrayList<>();
             }
-            buckets[freq].add(key);
+            buckets[frequency].add(key);
         }
-        for(int i = buckets.length -1; i >= 0; i--){
-            if(buckets[i] != null){
+        /* later index of bucket has greater frequency */
+        for(int i = buckets.length-1; i >= 0; i--){
+            if(buckets[i] != null && res.size() < k){
+                /* res.addAll(buckets[i]); /* this way could add more than k elements */
                 for(int j = 0; j < buckets[i].size() && res.size() < k; j++){
                     res.add(buckets[i].get(j));
                 }

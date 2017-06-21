@@ -6,40 +6,55 @@
 4. Return only the valid part (ie, 123!345, return 123)
 5. Return Integer.MAX_VALUE, or Integer.MIN_VALUE if overflows
 */
+/* template:
+    boolean valid = false; /* indicate valid starting point
+    for each char c in str{
+        if(Chracter.isDigit(c)){    /* valid chars part
+            valid = true;
+            //handle valid chars, overflows
+        }else{                      /* invalid special chars part
+            //handle special
+            if(!valid){             /* if not has a valid starting point
+                // two case: leading whitespaces, "+", "-" sign
+            }else{                  /* if has a valid starting point
+                break;
+            }
+        }
+    }
 
+*/
 public class Solution {
     public int myAtoi(String str) {
         if(str.length() == 0) return 0;
         int sign;
-        if(str.contains("-")){
-            sign = -1;
-        }else{
-            sign = 1;
-        }
-
         int result = 0;
         boolean valid = false;
         for(int i = 0; i < str.length(); i++){
-            if(Character.isDigit(str.charAt(i))){
+            if(Character.isDigit(str.charAt(i))){ /* deal with number */
                 valid = true;
                 int num = str.charAt(i) - '0';
+                /* avoiding interger overflow */
                 if(Integer.MAX_VALUE / 10 < result  || (Integer.MAX_VALUE - num) < result * 10){
                     return sign == -1 ? Integer.MIN_VALUE : Integer.MAX_VALUE;
                 }
                 result = result * 10 + num;
-            }else{
+            }else{ /* deal with other characters */
                 if(!valid){
-                    if(str.charAt(i) == ' '){
+                    if(str.charAt(i) == ' '){ /* ignoring leading whitespaces */
                         continue;
-                    }else if(str.charAt(i) == '-' || str.charAt(i) == '+'){
+                    }else if(str.charAt(i) == '-') {
                         valid = true;
+                        sign = -1;
                         continue;
-                    }
-                    else{
-                        return 0;
+                    }else if(str.charAt(i) == '+'){
+                        valid = true;
+                        sign = 1;
+                        continue;
+                    }else{
+                        return 0; /* return 0 for any leading special characters except '+', '-' */
                     }
                 }else{
-                    break;
+                    break; /* we have evaluated something, ignoring ending special scharacters */
                 }
             }
         }

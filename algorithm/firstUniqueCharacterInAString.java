@@ -1,3 +1,4 @@
+/* first unique means first not repeating */
 public class Solution {
     public int firstUniqChar(String s) {
        int[] count = new int[26];

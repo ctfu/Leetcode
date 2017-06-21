@@ -13,6 +13,7 @@ public class Solution {
       return isMirror(root.left, root.right);
     }
     private boolean isMirror(TreeNode left, TreeNode right){
+        /* deal with different symmetric conditions */
         if(left == null && right == null){
             return true;
         }else if(left == null || right == null){

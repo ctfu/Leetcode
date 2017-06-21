@@ -7,7 +7,7 @@ public class Solution extends VersionControl {
         while(start <= end){
             int mid = start + (end - start) /2; //dont use (start + edn) /2 for the midpoint, it can cause overflow
             if(isBadVersion(mid)){
-                firstBad = mid;
+                firstBad = mid;/* bad version could be mid or earlier */
                 end = mid -1;
             }else{
                 start = mid +1;

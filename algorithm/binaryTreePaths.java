@@ -22,6 +22,7 @@ public class Solution {
         treePaths(root.left, paths, path);
         treePaths(root.right, paths, path);
         if(root.left == null && root.right == null){
+            /* "->" consider as two characters, '-' and '>', that's why -2 */
             paths.add(path.substring(0, path.length() -2)); //to get rid of the last "->"
         }
     }

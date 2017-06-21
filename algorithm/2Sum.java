@@ -1,3 +1,7 @@
+/* Question require to return index, if has to use sorting
+ * 1. copy the original array
+ * 2. use sorting + two pointer to get the two numbers
+ * 3. search the numbers in the original array */
 public class Solution {
     public int[] twoSum(int[] nums, int target) {
         int[] res = new int[2];
@@ -21,7 +25,7 @@ public class Solution {
     }
 }
 
-//a hashmap Solution
+//a hashmap Solution o(n), space o(n) */
 public class Solution {
     public int[] twoSum(int[] nums, int target) {
         int[] res = new int[2];

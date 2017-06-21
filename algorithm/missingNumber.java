@@ -1,14 +1,14 @@
+/* binary search approach */
 public class Solution {
     public int missingNumber(int[] nums) {
         if(nums == null || nums.length == 0){
             return 0;
         }
-
         Arrays.sort(nums);
         int left = 0, right = nums.length;
         while(left < right){
             int mid = (left + right) / 2;
-            if(nums[mid] > mid){
+            if(nums[mid] > mid){/* here the number starts from 0, if starts from k, change to nums[mid] > mid + k, return left + k */
                 right = mid;
             }else{
                 left = mid + 1;

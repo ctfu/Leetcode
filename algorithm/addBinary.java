@@ -10,7 +10,7 @@ public class Solution {
             int bValue = Character.getNumericValue(b.charAt(bCount));
             sum = aValue + bValue + carry;
             carry = sum / 2;
-            res.insert(0, sum % 2);
+            res.insert(0, sum % 2); /* always added at the front, so dont need to reverse */
             aCount--;
             bCount--;
         }
@@ -28,7 +28,7 @@ public class Solution {
             res.insert(0, sum % 2);
             bCount--;
         }
-        if(carry ==  1){
+        if(carry ==  1){    /* remember the last carry */
             res.insert(0, carry);
         }
         return res.toString();

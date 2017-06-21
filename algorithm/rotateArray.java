@@ -1,8 +1,10 @@
+/* Method 1: shifting element */
 public class Solution {
     public void rotate(int[] nums, int k) {
         int count = 0;
         while(count < k){
             int temp = nums[nums.length -1];
+            /* shift the element to the right */
             for(int i = nums.length -1; i > 0; i--){
                 nums[i] = nums[i-1];
             }
@@ -44,11 +46,12 @@ public class Solution {
     }
 }
 
+/* Method 2: reverse */
 /* a nicer in-place solution based on above logic*/
 public class Solution {
     public void rotate(int[] nums, int k) {
         k = k % nums.length; /* this one importatn because k could be greater than nums.length*/
-        reverse(nums, 0, nums.length -1);
+        reverse(nums, 0, nums.length -1);/* reverse the entire array first */
         reverse(nums, 0, k -1);
         reverse(nums, k, nums.length -1);
     }

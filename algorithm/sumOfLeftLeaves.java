@@ -7,23 +7,23 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
+ /* The core idea is to decide what makes a left leaf
+  * 1. It needs to be in the left subtree
+  * 2. It needs to be a leaf node (no children) */
+
 public class Solution {
     public int sumOfLeftLeaves(TreeNode root) {
-        if(root == null){
+        int res = 0;
+        if (root == null) {
             return 0;
         }
-        int sum = 0;
-        if(root.left != null){
-            if(root.left.left == null && root.left.right == null){
-                sum += root.left.val;
-            }else{
-                sum += sumOfLeftLeaves(root.left);
+        if (root.left != null) {
+            if (root.left.left == null && root.left .right == null) { /* indicating it is a left leaf */
+                res += root.left.val;
             }
         }
-        if(root.right != null){
-            sum += sumOfLeftLeaves(root.right);
-        }
-
-        return sum;
+        res += sumOfLeftLeaves(root.left);
+        res += sumOfLeftLeaves(root.right);
+        return res;
     }
 }

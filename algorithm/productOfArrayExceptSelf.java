@@ -30,3 +30,28 @@ public class Solution {
         return nums;
     }
 }
+
+/* A better o(n), space: o(1) approach, the process is describe below: */
+/*******************************************************************************
+  {              1,         a[0],    a[0]*a[1],    a[0]*a[1]*a[2],  }--> abrove
+  { a[1]*a[2]*a[3],    a[2]*a[3],         a[3],                 1,  }--> below
+********************************************************************************/
+public class Solution {
+    public int[] productExceptSelf(int[] nums) {
+        int[] res = new int[nums.length];
+        int p = 1;
+        /* get the abrove array */
+        for(int i = 0; i < nums.length; i++){
+            res[i] = p;
+            p *= nums[i];
+        }
+
+        p = 1;
+        /* multiple by the below array */
+        for(int i = nums.length-1; i >= 0; i--){
+            res[i] *= p;
+            p *= nums[i];
+        }
+        return res;
+    }
+}

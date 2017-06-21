@@ -5,6 +5,7 @@ public class Solution {
         if(n < 3){
             return true;
         }else{
+            /* if it is not multiple of 4, than I can win */
             return n % 4 != 0;    /* the remainder should be the stones first pick */
         }
     }

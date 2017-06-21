@@ -5,11 +5,11 @@ public class Solution {
     		return list;
 
     	for (int i = 0; i < rowIndex + 1; i++) {
-    		list.add(0, 1);//added to the front each time
+    		list.add(0, 1); /* everytime insert 1 to the front */
     		for (int j = 1; j < list.size() - 1; j++) {
-    			list.set(j, list.get(j) + list.get(j + 1));
+    			list.set(j, list.get(j) + list.get(j + 1)); /* correct j's index value */
     		}
     	}
     	return list;
-        }
+    }
 }

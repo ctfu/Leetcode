@@ -26,14 +26,16 @@ public class Solution {
     }
 }
 
-//second Solution
+//second Solution, without extra space, merge from end */
 public class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
-        int i = m-1, j = n-1, temp = m + n- 1;
-        while(i > -1 && j > -1){
+        int i = m-1, j = n-1, temp = m + n- 1; /* get the end index */
+        while(i >= 0 && j >= 0){
+            /* because m is guarantee to be greater than n */
             nums1[temp--] = nums1[i] > nums2[j] ? nums1[i--] : nums2[j--];
         }
-        while(j > -1){
+        /* if it comes out of the while loop, we only care if nums2 is not finish */
+        while(j >= 0){
             nums1[temp--] = nums2[j--];
         }
     }

@@ -1,12 +1,4 @@
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
+/* A path is found when root.left == null && root.right == null */
 public class Solution {
     public boolean hasPathSum(TreeNode root, int sum) {
         List<Integer> pathSum = new ArrayList<>();
@@ -26,20 +18,17 @@ public class Solution {
     }
 }
 
-// a better Solution
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
+/* tail recursive solution */
 public class Solution {
     public boolean hasPathSum(TreeNode root, int sum) {
         if(root == null) return false;
+        /* when sum == 0, also check if is the end of a path */
         if((sum-root.val) == 0 && root.left == null && root.right == null) return true;
         return hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val);
     }
 }
+
+/* compare to combination sum:
+ * 1. Consider a path as an array operation
+ * 2. doesnot need controlling index, because a tree has left, right pointer to get the next value
+ * 3. Always pick the value */

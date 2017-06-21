@@ -4,6 +4,7 @@ public class Solution {
         String[] str2 = version2.split("\\.");
         int i = 0;
         while(i < str1.length || i < str2.length){
+            /* add 0 to make two version splited string equal size */
             int v1 = i < str1.length ? Integer.parseInt(str1[i]) : 0;
             int v2 = i < str2.length ? Integer.parseInt(str2[i]) : 0;
             if(v1 > v2){

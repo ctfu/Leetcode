@@ -1,8 +1,8 @@
 public class Solution {
-    /* assign unique code to each number */
-   /*'4' in row 7 is encoded as "(4)7".
-     '4' in column 7 is encoded as "7(4)".
-     '4' in the top-right block is encoded as "0(4)2". */
+   /* assign unique code to each number */
+   /*'4' in row 7 is encoded as "(4)7", code for row
+     '4' in column 7 is encoded as "7(4)", code for column
+     '4' in the top-right block is encoded as "0(4)2", code for each cube */
     public boolean isValidSudoku(char[][] board) {
         Set<String> seen = new HashSet<>();
         String code = "";

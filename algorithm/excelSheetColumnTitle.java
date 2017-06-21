@@ -3,26 +3,26 @@ public class Solution {
     public String convertToTitle(int n) {
         StringBuilder sb = new StringBuilder();
         while(n != 0){
-            char c = numToTitle((n-1) % 26);
-            n =  (n-1) / 26;
-            sb.insert(0,c);
+            n--;
+            char c = (char)(n % 26 + 'A');
+            sb.append(c);
+            n /= 26;
         }
-        return sb.toString();
-    }
-    private char numToTitle(int n){
-       return (char)(n + 'A');
+        return sb.reverse().toString();
     }
 }
 
-//shorter code
+/* if A is starting from 0, then */
 public class Solution {
     public String convertToTitle(int n) {
-        String res = "";
+        n++;    /* first transform to A starts from 1 */
+        StringBuilder sb = new StringBuilder();
         while(n != 0){
-            char c = (char)((n-1) % 26 + 'A');
-            n =  (n-1) / 26;
-            res = c + res;
+            n--;
+            char c = (char)(n % 26 + 'A');
+            sb.append(c);
+            n /= 26;
         }
-        return res;
+        return sb.reverse().toString();
     }
 }

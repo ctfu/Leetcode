@@ -4,6 +4,7 @@ public class Solution {
         int p = Math.abs(x);
         int res = 0;
         while(p != 0){
+            //check integer reverse result overflow
             if(Integer.MAX_VALUE / 10 < res || (Integer.MAX_VALUE - p % 10) < res * 10){
                 return 0;
             }

@@ -1,30 +1,19 @@
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
- */
+/* Requirement: Remove duplicate, so that each element appears once */
+/* This question is very similar to "removeLinkedListElement"*/
 public class Solution {
     public ListNode deleteDuplicates(ListNode head) {
-        if(head == null){
-            return null;
-        }
-        /* add the first element to the new list */
-        ListNode cur = head;
-        ListNode newHead = null;
-        ListNode tail = null;
-        newHead = tail = cur;
-        while(cur.next != null){
-            if(cur.val != cur.next.val){
-                tail.next = cur.next;
-                tail = tail.next;
+        if(head == null) return null;
+        /* we dont need a dummy here, because even if head is duplicated
+         * we can keep the head due to the question requirement */
+        ListNode pre = head;
+        while(pre.next != null){
+            if(pre.val == pre.next.val){
+                pre.next = pre.next.next;
+            }else{
+                pre = pre.next;
             }
-            cur = cur.next;
         }
-        tail.next = null;
-        return newHead;
+        return head;
     }
 }
 

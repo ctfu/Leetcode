@@ -1,3 +1,5 @@
+/* 1. The common prefix can go only as long as the shortest str in the string array
+ * 2. Any common prefix can be found in the longest str in the string array */
 public class Solution {
     public String longestCommonPrefix(String[] strs) {
         if(strs == null || strs.length == 0) return "";

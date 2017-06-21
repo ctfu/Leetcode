@@ -1,3 +1,5 @@
+/* 1. The string could contains special chars, but we only care alphanumeric chars
+ * 2. The string could have upper or lower case */
 public class Solution {
     public boolean isPalindrome(String s) {
         if(s == null || s.length() == 0) return true;
@@ -25,12 +27,12 @@ public class Solution {
     }
 }
 
-//third solution using two pointers
+/* third solution using two pointers */
 public class Solution {
     public boolean isPalindrome(String s) {
         if(s.isEmpty()) return true;
         int head = 0, tail = s.length() -1;
-        while(head <= tail){
+        while(head < tail){
             if(!Character.isLetterOrDigit(s.charAt(head))){
                 head++;
             }else if (!Character.isLetterOrDigit(s.charAt(tail))){

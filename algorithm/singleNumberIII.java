@@ -16,7 +16,7 @@ public class Solution {
         }
 
         diff &= -diff;  /* get the rightmost set bit using two's complement */
-
+        /* seperate the numbers into two groups: rightmost setbit, and rightmost unset bit */
         for(int num : nums){
             if((diff & num) == 0){  /* num with unset bit */
                 res[0] ^= num;

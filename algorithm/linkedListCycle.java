@@ -29,3 +29,22 @@ public class Solution {
     	return false;
     }
 }
+
+/* fast, slow pointer solution */
+public class Solution {
+    public boolean hasCycle(ListNode head) {
+        ListNode fast = head, slow = head;
+        while(fast != null){
+            if(fast.next != null){
+                fast = fast.next.next;
+            }else{
+                return false;
+            }
+            slow = slow.next;
+            if(fast == slow){
+                return true;
+            }
+        }
+        return false;
+    }
+}

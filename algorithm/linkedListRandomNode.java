@@ -31,7 +31,7 @@ public class Solution {
         int r = cur.val;
         for(int i = 1; cur.next != null; i++){
             cur = cur.next;
-            if(genRandom(i) == i) r = cur.val;
+            if(genRandom(i) == i) r = cur.val;/* here is the decision making process */
         }
         return r;
     }

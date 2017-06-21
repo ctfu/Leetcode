@@ -10,22 +10,14 @@
  * }
  */
 
-/* Instead of deleting a node, this approach moves the each node value up front */
 public class Solution {
     public void deleteNode(ListNode node) {
-        ListNode previous = null;
-        while(node.next != null){
+        if(node == null) return;
+        if(node.next == null){ /* is the node at the edn */
+            node = null;
+        }else{
             node.val = node.next.val;
-            previous = node;
-            node = node.next;
+            node.next = node.next.next;
         }
-        previous.next = node.next;
-
-        /* more efficient approach by dirrectly setting the correct node reference as follow: */
-        /* if(node.next != null){
-              node.value = node.next.value;
-              node.next = node.next.next;
-            }
-        */
     }
 }
