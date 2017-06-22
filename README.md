@@ -112,6 +112,8 @@ Leetcode algorithm solutions. The solutions here does not necessarily represent 
 |384|[Shuttle an Array](https://leetcode.com/problems/shuffle-an-array/)                                |[Java](algorithm/shuffleAnArray.java)              |Medium|
 |268|[ Missing Number](https://leetcode.com/problems/missing-number/)                                   |[Java](algorithm/missingNumber.java)               |Medium|
 |54|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)                                       |[Java](algorithm/spiralMatrix.java)                |Medium|
+|153|[Find Minimum in Rotated Soeted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)|[Java](algorithm/findMinimunInRotatedSortedArray.java)|Medium|
+|154|[Find Minimum in Rotated Soeted ArrayII](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)|[Java](algorithm/findMinimunInRotatedSortedArrayII.java)|Hard|
 
 
 
