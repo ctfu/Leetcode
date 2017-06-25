@@ -31,7 +31,7 @@ public class Solution {
             int len1 = expandPalindrom(s, i, i); /* if the string has odd number of chars */
             int len2 = expandPalindrom(s, i, i+1); /* if the string has even number of chars */
             int len = Math.max(len1, len2);
-            if(len > end - start){
+            if(len > end - start + 1){
                 start = i - (len-1)/2; /* i is the center index, i-(len-1)/2 = start index */
                 end = i + len/2; /* center + half of the lenth to get end index */
             }
