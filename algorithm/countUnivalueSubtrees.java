@@ -1,7 +1,8 @@
+/* time complexity: O(n), space complexity: O(logn) */
 public class Solution {
     public int countUnivalSubtrees(TreeNode root) {
         int[] count = new int[1];
-        helper(root, count);
+        helper(root, count);    // a helper function to test if a tree has univalue
         return count[0];
     }
 
