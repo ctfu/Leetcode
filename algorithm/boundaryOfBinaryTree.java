@@ -65,18 +65,20 @@ public class Solution {
         if (root == null) {
             return res;
         }
-        Set<Integer> set = new HashSet<>();
+        if (root.left == null && root.right == null) {
+            res.add(root.val);
+            return res;
+        }
         List<Integer> left = new ArrayList<>();
         List<Integer> right = new ArrayList<>();
         List<Integer> leaves = new ArrayList<>();
         res.add(root.val);
-        set.add(root.val);
         if (root.left != null) {
-            leftPath(left, root.left, set);
+            leftPath(left, root.left);
         }
-        findLeaf(leaves, root, set);
+        findLeaf(leaves, root);
         if (root.right != null) {
-            rightPath(right, root.right, set);
+            rightPath(right, root.right);
         }
         res.addAll(left);
         res.addAll(leaves);
@@ -86,54 +88,45 @@ public class Solution {
         return res;
     }
 
-    public void leftPath(List<Integer> res, TreeNode root, Set<Integer> set) {
+    public void leftPath(List<Integer> res, TreeNode root) {
         if (root == null) {
             return;
-        }
-        if (!set.contains(root.val)) {
-            res.add(root.val);
-            set.add(root.val);
         }
         if (root.left == null && root.right == null) {
             return;
         }
+        res.add(root.val);
         if (root.left != null) {
-            leftPath(res, root.left, set);
+            leftPath(res, root.left);
         } else {
-            leftPath(res, root.right, set);
+            leftPath(res, root.right);
         }
     }
 
-    public void rightPath(List<Integer> res, TreeNode root, Set<Integer> set) {
+    public void rightPath(List<Integer> res, TreeNode root) {
         if (root == null) {
             return;
-        }
-        if (!set.contains(root.val)) {
-            res.add(root.val);
-            set.add(root.val);
         }
         if (root.left == null && root.right == null) {
             return;
         }
+        res.add(root.val);
         if (root.right != null) {
-            rightPath(res, root.right, set);
+            rightPath(res, root.right);
         } else {
-            rightPath(res, root.left, set);
+            rightPath(res, root.left);
         }
     }
 
-    public void findLeaf(List<Integer> res, TreeNode root, Set<Integer> set) {
+    public void findLeaf(List<Integer> res, TreeNode root) {
         if (root == null) {
             return;
         }
         if (root.left == null && root.right == null) {
-            if (!set.contains(root.val)) {
-                res.add(root.val);
-                set.add(root.val);
-            }
+            res.add(root.val);
         } else {
-            findLeaf(res, root.left, set);
-            findLeaf(res, root.right, set);
+            findLeaf(res, root.left);
+            findLeaf(res, root.right);
         }
     }
 }
