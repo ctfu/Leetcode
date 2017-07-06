@@ -1,22 +1,27 @@
+/* Approach 1: take advantage of inorder sorted order search, using global variable to trace the difference
+ * time complexity: O(n), space complexity: O(1)
+ */
 public class Solution {
+    private double diff;
+    private int closest = 0;
     public int closestValue(TreeNode root, double target) {
-        TreeNode close = findClosestValue(root, target);
-        return close.val;
+        diff = Math.abs(target - root.val);
+        inorder(root, target);
+        return closest;
     }
-    public TreeNode findClosestValue(TreeNode root, double target){
-        if(root == null) return null;
-        TreeNode left = findClosestValue(root.left, target);
-        TreeNode right = findClosestValue(root.right, target);
-        TreeNode close = root;
-        if(left != null && right != null){
-            TreeNode cl1 = Math.abs(root.val - target) < Math.abs(left.val-target) ? root : left;
-            close = Math.abs(cl1.val-target) < Math.abs(right.val-target) ? cl1 : right;
-        }else if(left != null){
-            close = Math.abs(root.val - target) < Math.abs(left.val-target) ? root : left;
-        }else if(right != null){
-            close = Math.abs(root.val - target) < Math.abs(right.val-target) ? root : right;
+
+    public void inorder(TreeNode root, double target) {
+        if (root == null) {
+            return;
         }
-        return close;
+        inorder(root.left, target);
+        // note that Math.abs() takes int, return int, takes double, return double
+        double difference = Math.abs(root.val - target);
+        if (difference <= diff) {
+            closest = root.val;
+            diff = difference;
+        }
+        inorder(root.right, target);
     }
 }
 
