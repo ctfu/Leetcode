@@ -1,4 +1,4 @@
-/* DFS */
+/* Approach: DFS */
 public class Solution {
     public static final int[][] dirs = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
     public int longestIncreasingPath(int[][] matrix) {
