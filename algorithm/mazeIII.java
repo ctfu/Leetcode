@@ -1,38 +1,61 @@
+/* Take each cell in the matric as a Point object */
 public class Solution {
-   class Point implements Comparable<Point> {
-        int x,y,l;
-        String s;
-        public Point(int _x, int _y) {x=_x;y=_y;l=Integer.MAX_VALUE;s="";}
-        public Point(int _x, int _y, int _l,String _s) {x=_x;y=_y;l=_l;s=_s;}
-        public int compareTo(Point p) {return l==p.l?s.compareTo(p.s):l-p.l;}
-    }
     public String findShortestWay(int[][] maze, int[] ball, int[] hole) {
-        int m=maze.length, n=maze[0].length;
-        Point[][] points=new Point[m][n];
-        for (int i=0;i<m*n;i++) points[i/n][i%n]=new Point(i/n, i%n);
-        int[][] dir=new int[][] {{-1,0},{0,1},{1,0},{0,-1}};
-        String[] ds=new String[] {"u","r","d","l"};
-        PriorityQueue<Point> list=new PriorityQueue<>(); // using priority queue
-        list.offer(new Point(ball[0], ball[1], 0, ""));
-        while (!list.isEmpty()) {
-            Point p=list.poll();
-            if (points[p.x][p.y].compareTo(p)<=0) continue; // if we have already found a route shorter
-            points[p.x][p.y]=p;
-            for (int i=0;i<4;i++) {
-                int xx=p.x, yy=p.y, l=p.l;
-                while (xx>=0 && xx<m && yy>=0 && yy<n && maze[xx][yy]==0 && (xx!=hole[0] || yy!=hole[1])) {
-                    xx+=dir[i][0];
-                    yy+=dir[i][1];
-                    l++;
-                }
-                if (xx!=hole[0] || yy!=hole[1]) { // check the hole
-                    xx-=dir[i][0];
-                    yy-=dir[i][1];
-                    l--;
-                }
-                list.offer(new Point(xx, yy, l, p.s+ds[i]));
+        int rows = maze.length, cols = maze[0].length;
+        Point[][] points = new Point[rows][cols];
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                points[i][j] = new Point(i, j);
             }
         }
-        return points[hole[0]][hole[1]].l==Integer.MAX_VALUE?"impossible":points[hole[0]][hole[1]].s;
+        Queue<Point> queue = new LinkedList<>();
+        int[] direct = {0, 1, 0, -1, 0};
+        String[] path = {"r", "d", "l", "u"};
+        queue.offer(new Point(ball[0], ball[1], 0, ""));
+        while (!queue.isEmpty()) {
+            Point p = queue.poll();
+            if (points[p.x][p.y].compareTo(p) <= 0) {
+                continue;
+            }
+            points[p.x][p.y] = p;
+            for (int k = 0; k < 4; k++) {
+                int distance = p.distance;
+                int newX = p.x + direct[k], newY = p.y + direct[k + 1];
+                while (newX >= 0 && newX < rows && newY >= 0 && newY < cols && maze[newX][newY] == 0
+                       && (newX != hole[0] || newY != hole[1])) {
+                    newX += direct[k];
+                    newY += direct[k + 1];
+                    distance++;
+                }
+                if (newX != hole[0] || newY != hole[1]) { // if not in the hole, need to roll back one step
+                    newX -= direct[k];
+                    newY -= direct[k + 1];
+                }
+                queue.offer(new Point(newX, newY, distance, p.path + path[k]));
+            }
+        }
+        return points[hole[0]][hole[1]].distance == Integer.MAX_VALUE ? "impossible" : points[hole[0]][hole[1]].path;
+    }
+    class Point implements Comparable<Point> {
+        int x;
+        int y;
+        int distance;
+        String path;
+        public Point(int x, int y) {
+            this.x = x;
+            this.y = y;
+            this.distance = Integer.MAX_VALUE;
+            this.path = "";
+        }
+        public Point(int x, int y, int distance, String path) {
+            this.x = x;
+            this.y = y;
+            this.distance = distance;
+            this.path = path;
+        }
+        @Override
+        public int compareTo(Point p) {
+            return this.distance == p.distance ? this.path.compareTo(p.path) : this.distance - p.distance;
+        }
     }
 }
