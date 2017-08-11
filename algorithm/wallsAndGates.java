@@ -1,30 +1,27 @@
 public class Solution {
     public void wallsAndGates(int[][] rooms) {
-        if (rooms.length == 0 || rooms[0].length == 0) return;
-        Queue<int[]> queue = new LinkedList<>();
-        for (int i = 0; i < rooms.length; i++) {
-            for (int j = 0; j < rooms[0].length; j++) {
-                if (rooms[i][j] == 0) queue.add(new int[]{i, j});
-            }
+        if (rooms.length == 0 || rooms[0].length == 0) {
+            return;
         }
-        while (!queue.isEmpty()) {
-            int[] top = queue.remove();
-            int row = top[0], col = top[1];
-            if (row > 0 && rooms[row - 1][col] == Integer.MAX_VALUE) {
-                rooms[row - 1][col] = rooms[row][col] + 1;
-                queue.add(new int[]{row - 1, col});
-            }
-            if (row < rooms.length - 1 && rooms[row + 1][col] == Integer.MAX_VALUE) {
-                rooms[row + 1][col] = rooms[row][col] + 1;
-                queue.add(new int[]{row + 1, col});
-            }
-            if (col > 0 && rooms[row][col - 1] == Integer.MAX_VALUE) {
-                rooms[row][col - 1] = rooms[row][col] + 1;
-                queue.add(new int[]{row, col - 1});
-            }
-            if (col < rooms[0].length - 1 && rooms[row][col + 1] == Integer.MAX_VALUE) {
-                rooms[row][col + 1] = rooms[row][col] + 1;
-                queue.add(new int[]{row, col + 1});
+        int rows = rooms.length, cols = rooms[0].length;
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                if (rooms[i][j] == 0) {
+                    Queue<Integer> queue = new LinkedList<>();
+                    queue.offer(i * cols + j);
+                    while (!queue.isEmpty()) {
+                        int top = queue.poll();
+                        int[] direct = {0, 1, 0, -1, 0};
+                        for (int k = 0; k < 4; k++) {
+                            int x = top / cols + direct[k], y = top % cols + direct[k + 1];
+                            if (x >= 0 && x < rows && y >= 0 && y < cols && rooms[x][y] != -1
+                                && rooms[x][y] != 0 && rooms[x][y] > rooms[top / cols][top % cols] + 1) {
+                                rooms[x][y] = rooms[top / cols][top % cols] + 1;
+                                queue.offer(x * cols + y);
+                            }
+                        }
+                    }
+                }
             }
         }
     }
