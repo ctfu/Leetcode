@@ -1,3 +1,4 @@
+/* Note: the string exp in this question such as x+5-3+x does not contain space in between numbers and x*/
 class Solution {
     public String solveEquation(String equation) {
         int[] res = evaluateExpression(equation.split("=")[0]),
@@ -10,8 +11,9 @@ class Solution {
     }
 
     public int[] evaluateExpression(String exp) {
+        /* x+5-3+x: spliting result are: x, +5, -3, +x */
         String[] tokens = exp.split("(?=[-+])");
-        int[] res =  new int[2];
+        int[] res =  new int[2]; // res[0] store x's coefficient, res[1] the constant
         for (String token : tokens) {
             if (token.equals("+x") || token.equals("x")) res[0] += 1;
         else if (token.equals("-x")) res[0] -= 1;
