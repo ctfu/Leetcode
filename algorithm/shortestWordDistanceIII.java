@@ -42,3 +42,25 @@ class Solution {
         return res;
     }
 }
+
+
+/* approach 2, deal with it all together */
+class Solution {
+    public int shortestWordDistance(String[] words, String word1, String word2) {
+        long res = Integer.MAX_VALUE;
+        long index1 = res, index2 = -index1;
+        for (int i = 0; i < words.length; i++) {
+            if (word1.equals(words[i])) {
+                index1 = i;
+            }
+            if (word2.equals(words[i])) {
+                if (word2.equals(word1)) {
+                    index1 = index2;
+                }
+                index2 = i;
+            }
+            res = Math.min(res, Math.abs(index1 - index2));
+        }
+        return (int)res;
+    }
+}
