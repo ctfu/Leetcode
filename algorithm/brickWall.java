@@ -25,3 +25,22 @@ class Solution {
         return secondMax == Integer.MIN_VALUE ? wall.size() : wall.size() - secondMax;
     }
 }
+
+/* improve version: dont accumulate the last brick */
+class Solution {
+    public int leastBricks(List<List<Integer>> wall) {
+        Map<Integer, Integer> hm = new HashMap<>();
+        for (int i = 0; i < wall.size(); i++) {
+            int sumOfDist = 0;
+            for (int j = 0; j < wall.get(i).size() - 1; j++) { //ignore the last brick
+                sumOfDist += wall.get(i).get(j);
+                hm.put(sumOfDist, hm.getOrDefault(sumOfDist, 0) + 1);
+            }
+        }
+        int max = Integer.MIN_VALUE;
+        for (int num : hm.values()) {
+            max = Math.max(max, num);
+        }
+        return max == Integer.MIN_VALUE ? wall.size() : wall.size() - max;
+    }
+}
