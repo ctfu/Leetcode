@@ -19,7 +19,7 @@ class Solution {
             }
         }
         for (List<String> list : hm.values()) {
-            if (list.size() > 1) {
+            if (list.size() > 1) { // the test case requires grouping size > 1, means if all unqies fiels will output []
                 res.add(list);
             }
         }
