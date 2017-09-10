@@ -1,4 +1,6 @@
-/* Approach HashMap
+/*
+Question: group files with with same content under a given list of directories
+Approach HashMap
 * similar to group anagram, group shifted strings
 * key is the same file content */
 class Solution {
