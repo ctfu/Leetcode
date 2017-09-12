@@ -30,7 +30,7 @@ public class Solution extends Reader4 {
             if (bufferPtr == 0) {
                 bufferCnt = read4(temp);
             }
-            if (bufferCnt == 0) {
+            if (bufferCnt == 0) { // end of file
                 break;
             }
             while (total < n && bufferPtr < bufferCnt) {
