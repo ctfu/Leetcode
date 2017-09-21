@@ -34,3 +34,23 @@ public class Solution {
         return res.toString();
     }
 }
+
+/* shorter version */
+class Solution {
+    public String addBinary(String a, String b) {
+        StringBuilder sb = new StringBuilder();
+        int len1 = a.length() - 1, len2 = b.length() - 1;
+        int sum = 0, carry = 0;
+        while (len1 >= 0 || len2 >= 0) {
+            int first = len1 >= 0 ? (a.charAt(len1--) - '0') : 0; // append 0 once one string is finished
+            int second = len2 >= 0 ? (b.charAt(len2--) - '0') : 0;
+            sum = first + second + carry;
+            sb.append(sum % 2);
+            carry = sum / 2;
+        }
+        if (carry != 0) {
+            sb.append(carry);
+        }
+        return sb.reverse().toString();
+    }
+}
