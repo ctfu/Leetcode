@@ -32,11 +32,12 @@ public class Solution {
         if (root == null) {
             return;
         }
+        // don't include the leaf node for left boundary
         if (root.left == null && root.right == null) {
             return;
         }
         res.add(root.val);
-        if (root.left != null) {
+        if (root.left != null) {    // alternate between left and right tree to only include one path
             leftPath(res, root.left);
         } else {
             leftPath(res, root.right);
