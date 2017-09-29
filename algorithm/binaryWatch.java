@@ -29,9 +29,10 @@ public class Solution {
     private void generateDigitHelper(int[] num, int count, int position, int calculated, List<Integer> res){
         if(count == 0){
             res.add(calculated);
-        }
-        for(int i = position; i < num.length; i++){
-            generateDigitHelper(num, count - 1, i + 1, calculated + num[i], res);
+        } else {
+            for(int i = position; i < num.length; i++){
+                generateDigitHelper(num, count - 1, i + 1, calculated + num[i], res);
+            }
         }
     }
 }
