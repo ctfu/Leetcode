@@ -1,3 +1,63 @@
+/* Solution 1*/
+class Solution {
+    public int maxKilledEnemies(char[][] grid) {
+        if (grid.length == 0 || grid[0].length == 0) {
+            return 0;
+        }
+        int res = 0;
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[i].length; j++) {
+                if (grid[i][j] == '0') {
+                    res = Math.max(res, getEnemy(grid, i, j));
+                }
+            }
+        }
+        return res;
+    }
+    public int getEnemy(char[][] grid, int x, int y) {
+        int row = 0;
+        for (int i = x; i >= 0; i--) {
+            if (grid[i][y] == 'W') {
+                break;
+            } else if (grid[i][y] == '0') {
+                continue;
+            } else {
+                row++;
+            }
+        }
+        for (int i = x; i < grid.length; i++) {
+            if (grid[i][y] == 'W') {
+                break;
+            } else if (grid[i][y] == '0') {
+                continue;
+            } else {
+                row++;
+            }
+        }
+        int col = 0;
+        for (int i = y; i >= 0; i--) {
+            if (grid[x][i] == 'W') {
+                break;
+            } else if (grid[x][i] == '0') {
+                continue;
+            } else {
+                col++;
+            }
+        }
+        for (int i = y; i < grid[x].length; i++) {
+            if (grid[x][i] == 'W') {
+                break;
+            } else if (grid[x][i] == '0') {
+                continue;
+            } else {
+                col++;
+            }
+        }
+        return row + col;
+    }
+}
+
+/* solution 2 */
 class Solution {
     public int maxKilledEnemies(char[][] grid) {
         if(grid == null || grid.length == 0 ||  grid[0].length == 0) return 0;
