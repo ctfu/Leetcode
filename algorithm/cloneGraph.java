@@ -6,6 +6,7 @@
  *     UndirectedGraphNode(int x) { label = x; neighbors = new ArrayList<UndirectedGraphNode>(); }
  * };
  */
+ /* because it is an undirected graph, we need to hash map to prevent circle */
 public class Solution {
     public UndirectedGraphNode cloneGraph(UndirectedGraphNode node) {
         Map<Integer, UndirectedGraphNode> hm = new HashMap<>();/* hashMap to store the visited node */
@@ -17,7 +18,8 @@ public class Solution {
             return hm.get(node.label);
         }
         UndirectedGraphNode copy = new UndirectedGraphNode(node.label);
-        hm.put(node.label, copy); /* visite the current node */
+        /* visite the current node, important here to add the copy node rather than node, because we need to reture it */
+        hm.put(node.label, copy);
         for(UndirectedGraphNode gNode : node.neighbors){
             copy.neighbors.add(dfs(gNode, hm));
         }
