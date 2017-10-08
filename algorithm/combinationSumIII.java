@@ -7,7 +7,7 @@ public class Solution {
     }
     private void combo(List<List<Integer>> res, int n, int k, int start,
                                         List<Integer> tempList){
-        if(n < 0 || n != 0 &&start > 9 || n== 0 && k != 0) return;
+        if(n < 0 || n != 0 &&start > 9 || k < 0 || k != 0 && start > 9) return;
         if(n == 0 && k==0){
             res.add(new ArrayList<Integer>(tempList));
         }else{
