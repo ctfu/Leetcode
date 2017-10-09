@@ -10,14 +10,12 @@
  * }
  */
 
-public class Solution {
-    public void deleteNode(ListNode node) {
-        if(node == null) return;
-        if(node.next == null){ /* is the node at the edn */
-            node = null;
-        }else{
-            node.val = node.next.val;
-            node.next = node.next.next;
-        }
-    }
-}
+ class Solution {
+     public void deleteNode(ListNode node) {
+         if (node == null) {
+             return;
+         }
+         node.val = node.next.val;
+         node.next = node.next.next;
+     }
+ }
