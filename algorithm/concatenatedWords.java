@@ -14,6 +14,7 @@ public class Solution {
             if(canBreak(words[i], dict) && words[i].length() != 0){ /* no empty string "" */
                 res.add(words[i]);
             }
+            // dont create the dictionary first, because the shortest work will not be brekable
             dict.add(words[i]);
         }
         return res;
