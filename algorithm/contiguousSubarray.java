@@ -9,7 +9,7 @@ public class Solution {
         Map<Integer, Integer> hm = new HashMap<>();
         int count = 0;
         int max = 0;
-        hm.put(0, -1);
+        hm.put(0, -1); // reason why put(0, -1) is to solve the edge case when count first decrease to 0
         for (int i = 0; i < nums.length; i++) {
             count = count + (nums[i] == 1 ? 1 : -1);
             if (hm.containsKey(count)) {
