@@ -1,5 +1,48 @@
 /* Topological Sort
 */
+// Approach 1
+class Solution {
+    public int[] findOrder(int numCourses, int[][] prerequisites) {
+        List<Integer> res = new ArrayList<>();
+        int[][] matrix = new int[numCourses][numCourses];
+        int[] indegree = new int[numCourses];
+
+        for (int[] course : prerequisites) {
+            int ready = course[0];
+            int pre = course[1];
+            indegree[ready]++;
+            matrix[pre][ready] = 1;
+        }
+        Queue<Integer> queue = new LinkedList<>();
+        for (int i = 0; i < numCourses; i++) {
+            if (indegree[i] == 0) {
+                queue.offer(i);
+            }
+        }
+        while (!queue.isEmpty()) {
+            int top = queue.poll();
+            res.add(top);
+            for (int i = 0; i < numCourses; i++) {
+                if (matrix[top][i] == 1) {
+                    indegree[i]--;
+                    if (indegree[i] == 0) {
+                        queue.offer(i);
+                    }
+                }
+            }
+        }
+        if (res.size() == numCourses) {
+            int[] list = new int[res.size()];
+            for (int i = 0; i < res.size(); i++) {
+                list[i] = res.get(i);
+            }
+            return list;
+        }
+        return new int[0];
+    }
+}
+
+// approach 2
 public class Solution {
     private int N = 0;
 
