@@ -1,5 +1,6 @@
 /* Approach: recursive
- * time complexity: O(n), space complexity: O(n), n is the minimum number of nodes of two trees
+ * time complexity: O(n), average space complexity: o(logn),
+ worse space complexity: O(n), n is the minimum number of nodes of two trees
  */
  public class Solution {
      public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
