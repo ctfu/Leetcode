@@ -17,6 +17,7 @@ class Solution {
                 i--;
             }
         }
+        stack.clear();
         for (int i = nums.length - 1; i >= 0; i--) {
             if (stack.isEmpty() || nums[i] <= nums[stack.peek()]) {
                 stack.push(i);
