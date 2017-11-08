@@ -1,3 +1,14 @@
+/*
+backtracking + menorization
+[1, 2, 3 .... 8,9,10]
+2,3
+3,2
+time complexity: 2 ^ n
+no meno: 2^n * 2^(n-1) * ... 2 * 1 = 2^((1 + n) * n / 2) + 1 = O(2^(n^2))
+
+int[] state = new int[maxNumber];
+recursion + HashMap<String,Boolean>();
+*/
 class Solution {
     public boolean canIWin(int maxChoosableInteger, int desiredTotal) {
         if ((1 + maxChoosableInteger) * maxChoosableInteger / 2 < desiredTotal) {
