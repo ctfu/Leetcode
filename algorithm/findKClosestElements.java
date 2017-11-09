@@ -1,4 +1,7 @@
-/* Binary search:
+/*
+The most simplified way is to sort the differences between each number and x
+
+Binary search:
 the key is to search the begin element's index of the final return k elemets
 time complexity: O(logn)
 space complexity: O(1)
