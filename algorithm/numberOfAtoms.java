@@ -1,4 +1,4 @@
-/* Approach: recursive + treeMap */
+/* Approach: stack + treeMap */
 class Solution {
     public String countOfAtoms(String formula) {
         int N = formula.length();
