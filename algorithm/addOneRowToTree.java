@@ -26,6 +26,7 @@ public class Solution {
                     }
                     top.left = leftNode;
                     top.right = rightNode;
+                    continue;   //add continue to break out of the loop when added one row
                 }
                 if (top.left != null) {
                     queue.offer(top.left);
@@ -61,7 +62,7 @@ public class Solution {
         if (depth == d - 1) {
             TreeNode leftNode = new TreeNode(v);
             TreeNode rightNode = new TreeNode(v);
-            leftNode.left = root.left;  // not necessary to check root.left or right is null 
+            leftNode.left = root.left;  // not necessary to check root.left or right is null
             rightNode.right = root.right;
             root.left = leftNode;
             root.right = rightNode;
