@@ -1,5 +1,5 @@
 /* Approach: DFS, calculate number of increasing subsequence
-* time complexity: O(n), space complexity: O(n)
+* time complexity: worse case O(2 ^ n), space complexity: O(n)
 */
 public class Solution {
     public List<List<Integer>> findSubsequences(int[] nums) {
