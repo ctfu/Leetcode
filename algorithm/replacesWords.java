@@ -1,4 +1,24 @@
-/* Trie Tree */
+/* solution 1 */
+class Solution {
+    public String replaceWords(List<String> dict, String sentence) {
+        Set<String> set = new HashSet<>(dict);
+        String[] words = sentence.split(" ");
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < words.length; i++) {
+            for (int j = 1; j <= words[i].length(); j++) {
+                String root = words[i].substring(0, j);
+                if (set.contains(root)) {
+                    words[i] = root;
+                }
+            }
+            sb.append(words[i] + " ");
+        }
+        sb.setLength(sb.length() - 1);
+        return sb.toString();
+    }
+}
+
+/* solution 2: Trie Tree */
 class Solution {
     public String replaceWords(List<String> dict, String sentence) {
         StringBuilder res = new StringBuilder();
