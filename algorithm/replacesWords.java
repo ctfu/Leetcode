@@ -9,12 +9,12 @@ class Solution {
                 String root = words[i].substring(0, j);
                 if (set.contains(root)) {
                     words[i] = root;
+                    break;
                 }
             }
             sb.append(words[i] + " ");
         }
-        sb.setLength(sb.length() - 1);
-        return sb.toString();
+        return sb.substring(0, sb.length() - 1);
     }
 }
 
