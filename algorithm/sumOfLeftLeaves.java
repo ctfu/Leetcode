@@ -1,11 +1,12 @@
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
+/*
+3
+/ \
+9  20
+/  \
+15   7
+
+There are two left leaves in the binary tree, with values 9 and 15 respectively. Return 24.
+
  */
  /* The core idea is to decide what makes a left leaf
   * 1. It needs to be in the left subtree

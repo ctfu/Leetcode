@@ -1,12 +1,21 @@
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
+Given a binary tree, return all root-to-leaf paths.
+
+Note: A leaf is a node with no children.
+
+Example:
+
+Input:
+
+   1
+ /   \
+2     3
+ \
+  5
+
+Output: ["1->2->5", "1->3"]
+
+Explanation: All root-to-leaf paths are: 1->2->5, 1->3
+-------------------------------------------------------------------------------
 public class Solution {
     public List<String> binaryTreePaths(TreeNode root) {
         List<String> paths = new ArrayList<>();
@@ -24,6 +33,19 @@ public class Solution {
         if(root.left == null && root.right == null){
             /* "->" consider as two characters, '-' and '>', that's why -2 */
             paths.add(path.substring(0, path.length() -2)); //to get rid of the last "->"
+        }
+    }
+    // second way for the second function
+    private void findPath(List<String> list, TreeNode root, String path) {
+        if (root == null) return;
+
+        path += root.val;
+        if (root.left == null && root.right == null) {
+        list.add(path);
+        } else {
+            path += "->"; // dont need to get rid of "->"
+            findPath(list, root.left, path);
+            findPath(list, root.right, path);
         }
     }
 }

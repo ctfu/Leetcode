@@ -1,4 +1,3 @@
-/*
 Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
@@ -9,8 +8,7 @@ Example:
 
     Because nums[0] + nums[1] = 2 + 7 = 9,
     return [0, 1].
-
-*/
+--------------------------------------------------------------------------------
 /* Question require to return index, if has to use sorting
  * 1. copy the original array
  * 2. use sorting + two pointer to get the two numbers
