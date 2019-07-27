@@ -1,3 +1,13 @@
+/*
+You want to build a house on an empty land which reaches all buildings in the
+shortest amount of distance. You can only move up, down, left and right.
+You are given a 2D grid of values 0, 1 or 2, where:
+
+Each 0 marks an empty land which you can pass by freely.
+Each 1 marks a building which you cannot pass through.
+Each 2 marks an obstacle which you cannot pass through.
+*/
+
 public class Solution {
     public int shortestDistance(int[][] grid) {
         if(grid.length == 0 || grid[0].length == 0){
@@ -44,6 +54,6 @@ public class Solution {
                 }
             }
         }
-        return shortest == Integer.MAX_VALUE ? -1 : shortest;
+        return shortest == Integer.MAX_VALUE ? -1 : shortest; // in case there isn't any space available
     }
 }

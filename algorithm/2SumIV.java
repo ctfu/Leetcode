@@ -1,3 +1,4 @@
+/*
 Given a Binary Search Tree and a target number, return true if there exist two elements in the BST such that their sum is equal to the given target.
 
 Example 1:
@@ -22,7 +23,7 @@ Input:
   3   6
  / \   \
 2   4   7
---------------------------------------------------------------------------------
+*/
 /*  1. if the input is a BST, it can still use the hashmap method, the difference is to search through
     a tree intead of an array
     2. another approach would be to inorder search the bst tree to get an sorted list, then use

@@ -1,3 +1,9 @@
+/*
+Implement a basic calculator to evaluate a simple expression string.
+
+The expression string contains only non-negative integers, +, -, *, / operators
+and empty spaces . The integer division should truncate toward zero.
+*/
 /* Approach: stack
  * time complexity: O(n), space complexity: O(n)
  */
@@ -13,7 +19,7 @@ public class Solution {
             if (Character.isDigit(s.charAt(i))) {
                 tempRes = tempRes * 10 + s.charAt(i) - '0';
             }
-            // here not use else, if reach last number, need to perform calculation for previous sign 
+            // here not use else, if reach last number, need to perform calculation for previous sign
             if (!Character.isDigit(s.charAt(i)) && s.charAt(i) != ' ' || i == s.length() - 1) {
                 if (sign == '+') {
                     stack.push(tempRes);

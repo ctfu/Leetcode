@@ -1,3 +1,4 @@
+/*
 Given a matrix consists of 0 and 1, find the distance of the nearest 0 for each cell.
 
 The distance between two adjacent cells is 1.
@@ -25,7 +26,7 @@ Note:
 The number of elements of the given matrix will not exceed 10,000.
 There are at least one 0 in the given matrix.
 The cells are adjacent in only four directions: up, down, left and right.
---------------------------------------------------------------------------------
+*/
 /* BFS: 1. only starts with cells with zero, so non-zero cell distance will be +1 based on the starting cell
         2. if the newly calculated for a target cell's distance is greater than its cell valued, skip
         3. set all non-zero cell to Integer.MAX_VALUE initially */
@@ -60,6 +61,8 @@ public class Solution {
 
 // if the given output is a matrix, the disadvantage of this solution is that you need to
 //modify the input matrix, should copy first in production code
+// The advantage of starting from zero is that you can just update the cell value, if you start
+// from 1, you will need to store how many steps till reaching the zero
 class Solution {
     public int[][] updateMatrix(int[][] matrix) {
         int rows = matrix.length, cols = matrix[0].length;

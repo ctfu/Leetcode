@@ -31,7 +31,9 @@ class Solution {
                         set.add(to);
                         indegree.put(to, indegree.get(to) + 1);
                     }
-                    break; // after this char, the char order in first maybe greater than the second' char
+                    // only need to find the first different comparision
+                    // after this char, the char order in first maybe greater than the second' char
+                    break;
                 }
             }
         }

@@ -1,4 +1,6 @@
-You have a total of n coins that you want to form in a staircase shape, where every k-th row must have exactly k coins.
+/*
+You have a total of n coins that you want to form in a staircase shape,
+where every k-th row must have exactly k coins.
 
 Given n, find the total number of full staircase rows that can be formed.
 
@@ -23,17 +25,21 @@ The coins can form the following rows:
 ¤ ¤
 ¤ ¤ ¤
 ¤ ¤
+*/
 ---------------------------------------------------------------------
 class Solution {
     public int arrangeCoins(int n) {
-        if (n == 0) {
-            return 0;
-        }
-        int row = 0;
+        if (n == 0) return 0;
 
-        while (n >= row) {
-            n -= row++;
+        int row = 1;
+        while (n > 0) {
+            if (n >= row) {
+                n -= row;
+                row++;
+            } else {
+                break;
+            }
         }
-        return row - 1;
+        return row - 1; 
     }
 }

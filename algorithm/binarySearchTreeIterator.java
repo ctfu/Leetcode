@@ -1,3 +1,9 @@
+/*
+Implement an iterator over a binary search tree (BST).
+Your iterator will be initialized with the root node of a BST.
+
+Calling next() will return the next smallest number in the BST.
+*/
 /* Idea: start from the left most node, repeatly find that node's successor */
 public class BSTIterator {
     private TreeNode root;
@@ -6,6 +12,7 @@ public class BSTIterator {
     public BSTIterator(TreeNode root) {
         this.root = root;
         TreeNode cur = root;
+        // first assign the start to the leftmost node, in case call next right away 
         while(cur != null && cur.left != null){
             cur = cur.left;
         }

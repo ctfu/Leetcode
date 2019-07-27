@@ -29,6 +29,7 @@ public class WordDictionary {
         for (int i = 0; i < word.length(); i++) {
             if (word.charAt(i) == '.') {
                 for (int j = 0; j < cur.children; j++) {
+                    // important to pass the substring(i + 1) instad of the whole string
                     if (cur.children[j] != null && search(word.substring(i+1), cur.children[j])) {
                         return true;
                     }

@@ -1,3 +1,4 @@
+/*
 Given a sequence of n integers a1, a2, ..., an, a 132 pattern is a subsequence
 ai, aj, ak such that i < j < k and ai < ak < aj. Design an algorithm that takes
 a list of n numbers as input and checks whether there is a 132 pattern in the list.
@@ -22,7 +23,7 @@ Input: [-1, 3, 2, 0]
 Output: True
 
 Explanation: There are three 132 patterns in the sequence: [-1, 3, 2], [-1, 3, 0] and [-1, 2, 0].
---------------------------------------------------------------------------------
+*/
 /* maintain multiple min-max intervals */
 public class Solution {
     public boolean find132pattern(int[] nums) {

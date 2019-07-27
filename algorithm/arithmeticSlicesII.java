@@ -1,4 +1,26 @@
-/* Follow up change: arithmetic slice in subsequence instead of consecutive subarray */
+/*
+A sequence of numbers is called arithmetic if it consists of at least three
+elements and if the difference between any two consecutive elements is the same.
+
+Input: [2, 4, 6, 8, 10]
+
+Output: 7
+
+Explanation:
+All arithmetic subsequence slices are:
+[2,4,6]
+[4,6,8]
+[6,8,10]
+[2,4,6,8]
+[4,6,8,10]
+[2,4,6,8,10]
+[2,6,10]
+*/
+/* difference between arithmetic slide 1 is that:
+ * this one includes the results of airthmetic slides of subsequences.
+ * 1. use hashmap array to count each index's hmap<distance, counter>()
+ * 2. if encounter the distance key twice, then this is a arithmetic slide
+ * 3. the number can be negative, there is chance of overflow after substration*/
 public class Solution {
     public int numberOfArithmeticSlices(int[] A) {
         if(A == null || A.length == 0) return 0;
