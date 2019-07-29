@@ -1,3 +1,4 @@
+/*
 Given a binary tree, return all root-to-leaf paths.
 
 Note: A leaf is a node with no children.
@@ -15,7 +16,7 @@ Input:
 Output: ["1->2->5", "1->3"]
 
 Explanation: All root-to-leaf paths are: 1->2->5, 1->3
--------------------------------------------------------------------------------
+*/
 public class Solution {
     public List<String> binaryTreePaths(TreeNode root) {
         List<String> paths = new ArrayList<>();
@@ -41,7 +42,7 @@ public class Solution {
 
         path += root.val;
         if (root.left == null && root.right == null) {
-        list.add(path);
+            list.add(path);
         } else {
             path += "->"; // dont need to get rid of "->"
             findPath(list, root.left, path);

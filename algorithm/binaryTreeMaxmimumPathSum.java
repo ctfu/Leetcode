@@ -1,3 +1,4 @@
+/*
 Given a non-empty binary tree, find the maximum path sum.
 
 For this problem, a path is defined as any sequence of nodes from some
@@ -24,6 +25,7 @@ Input: [-10,9,20,null,null,15,7]
    15   7
 
 Output: 42
+*/
 /* A path is defined as "Node sequence starting from any node to another node "
  * Each path has a highest node, it goes up from left up to highest and goes down right from hightst
  * Note: the tree value could be negative value

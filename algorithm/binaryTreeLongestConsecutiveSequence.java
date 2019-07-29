@@ -36,6 +36,7 @@ Output: 2
 
 Explanation: Longest consecutive sequence path is 2-3, not 3-2-1, so return 2.
 */
+// Note: here the longest consecutive sequence path is increasing path
 public class Solution {
     private int max = 0;
     public int longestConsecutive(TreeNode root) {
