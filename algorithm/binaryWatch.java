@@ -25,7 +25,7 @@ public class Solution {
         generateDigitHelper(num, count, 0, 0, res);
         return res;
     }
-    //a helper method to permutate the digits
+    //a helper method to combonation the digits
     private void generateDigitHelper(int[] num, int count, int position, int calculated, List<Integer> res){
         if(count == 0){
             res.add(calculated);

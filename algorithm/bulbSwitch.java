@@ -1,3 +1,4 @@
+/*
 There are n bulbs that are initially off. You first turn on all the bulbs. Then,
 you turn off every second bulb. On the third round, you toggle every third bulb
 (turning on if it's off or turning off if it's on). For the i-th round, you toggle
@@ -15,6 +16,7 @@ After second round, the three bulbs are [on, off, on].
 After third round, the three bulbs are [on, off, off].
 
 So you should return 1, because there is only one bulb is on.
+*/
 /*
 1. a bulb is on iff it was switched odd number of times
 2. a bulb (index i) is switched iff the bulb index can be divided evenly by round (index r)

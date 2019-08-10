@@ -1,3 +1,25 @@
+/*
+Given a binary tree, return the values of its boundary in anti-clockwise direction
+starting from root. Boundary includes left boundary, leaves, and right boundary
+in order without duplicate nodes.  (The values of the nodes may still be duplicates.)
+Input:
+    ____1_____
+   /          \
+  2            3
+ / \          /
+4   5        6
+   / \      / \
+  7   8    9  10
+
+Ouput:
+[1,2,4,7,8,9,10,6,3]
+
+Explanation:
+The left boundary are node 1,2,4. (4 is the left-most node according to definition)
+The leaves are node 4,7,8,9,10.
+The right boundary are node 1,3,6,10. (10 is the right-most node).
+So order them in anti-clockwise without duplicate nodes we have [1,2,4,7,8,9,10,6,3].
+*/
 /* seperate into left boundary, right boundary and leaves nodes */
 public class Solution {
     public List<Integer> boundaryOfBinaryTree(TreeNode root) {
